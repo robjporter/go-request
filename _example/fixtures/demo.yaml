@@ -1,0 +1,2314 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers:
+      Content-Type:
+      - application/json
+    url: http://google.com/
+    method: GET
+  response:
+    body: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+      Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A HREF=\"http://www.google.pl/?gfe_rd=cr&amp;ei=6K_cWImVOaz_8Aedpb6gAg\">here</A>.\r\n</BODY></HTML>\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - "258"
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 30 Mar 2017 07:12:40 GMT
+      Location:
+      - http://www.google.pl/?gfe_rd=cr&ei=6K_cWImVOaz_8Aedpb6gAg
+    status: 302 Found
+    code: 302
+- request:
+    body: ""
+    form: {}
+    headers:
+      Content-Type:
+      - application/json
+      Referer:
+      - http://google.com/
+    url: http://www.google.pl/?gfe_rd=cr&ei=6K_cWImVOaz_8Aedpb6gAg
+    method: GET
+  response:
+    body: !!binary |
+      PCFkb2N0eXBlIGh0bWw+PGh0bWwgaXRlbXNjb3BlPSIiIGl0ZW10eXBlPSJodHRwOi8vc2
+      NoZW1hLm9yZy9XZWJQYWdlIiBsYW5nPSJwbCI+PGhlYWQ+PG1ldGEgY29udGVudD0idGV4
+      dC9odG1sOyBjaGFyc2V0PVVURi04IiBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiPjxtZX
+      RhIGNvbnRlbnQ9Ii9pbWFnZXMvYnJhbmRpbmcvZ29vZ2xlZy8xeC9nb29nbGVnX3N0YW5k
+      YXJkX2NvbG9yXzEyOGRwLnBuZyIgaXRlbXByb3A9ImltYWdlIj48dGl0bGU+R29vZ2xlPC
+      90aXRsZT48c2NyaXB0PihmdW5jdGlvbigpe3dpbmRvdy5nb29nbGU9e2tFSTonNmFfY1dL
+      Q1ZCTVhfYWEyd3VvQUcnLGtFWFBJOic3NTA3MjIsMTM1MTg5MiwxMzUyNDY3LDEzNTI1NT
+      IsMTM1Mjg2MywxMzUyOTk2LDEzNTMwNDAsMTM1MzEwNiwxMzUzMTQ4LDM3MDAyNzMsMzcw
+      MDM0NywzNzAwNDA1LDQwMjk4MTUsNDAzMTEwOSw0MDMyNjc3LDQwMzY1MjcsNDAzODAxMi
+      w0MDM5MjY4LDQwNDM0OTIsNDA0NTg0MSw0MDQ4MzQ3LDQwNjU3ODYsNDA2NjE5Niw0MDY3
+      OTI0LDQwNzIzNjQsNDA3Mjc3NSw0MDc2MDk1LDQwNzY5OTksNDA3ODQzMCw0MDgxMDM5LD
+      QwODExNjQsNDA4NTMzNSw0MDg4MzQxLDQwOTA0NjIsNDA5MDU1MCw0MDkwNTUzLDQwOTA4
+      MDYsNDA5MjE4Myw0MDkyMjMxLDQwOTI5MzQsNDA5MzMxMyw0MDkzNDk5LDQwOTM3OTIsND
+      A5NDI1MSw0MDk0NTQ0LDQwOTQ4MzcsNDA5NTU3NCw0MDk1Nzg4LDQwOTU5MDksNDA5NTk5
+      OSw0MDk2MzI0LDQwOTcxNTMsNDA5NzIwMyw0MDk3NjIwLDQwOTc4NjYsNDA5NzkyMiw0MD
+      k3OTI5LDQwOTg2MDAsNDA5ODcyMSw0MDk4NzI4LDQwOTg3NTIsNDA5OTMxMCw0MTAwMTY5
+      LDQxMDAzNzksNDEwMTIxMCw0MTAxMzc2LDQxMDE1NzgsNDEwMTU4Nyw0MTAxNjA2LDQxMD
+      E2NTQsNDEwMTY4NCw0MTAyMjM5LDQxMDI0MTEsNDEwMjY1OCw0MTAyNjkwLDQxMDI5ODgs
+      NDEwMzA2MSw0MTAzMTg0LDQxMDMyMzcsNDEwMzQ3Myw0MTAzNDg1LDQxMDM4NDUsNDEwMz
+      k4Nyw0MTAzOTk2LDQxMDQyOTAsNDEwNTMxNyw4MzAwNDk3LDg1MDM1ODUsODUwNzM4MCw4
+      NTA4MjI5LDg1MDg3MDYsODUwODkzMSw4NTA5MDM3LDg1MDkzNzMsMTAyMDAwODMsMTkwMD
+      E3MjAsMTkwMDE3NjQsMTkwMDE5MjIsNDEwMjczNDEnLGF1dGh1c2VyOjAsa3NjczonYzlj
+      OTE4ZjBfMjQnfTtnb29nbGUua0hMPSdwbCc7fSkoKTsoZnVuY3Rpb24oKXtnb29nbGUubG
+      M9W107Z29vZ2xlLmxpPTA7Z29vZ2xlLmdldEVJPWZ1bmN0aW9uKGEpe2Zvcih2YXIgYjth
+      JiYoIWEuZ2V0QXR0cmlidXRlfHwhKGI9YS5nZXRBdHRyaWJ1dGUoImVpZCIpKSk7KWE9YS
+      5wYXJlbnROb2RlO3JldHVybiBifHxnb29nbGUua0VJfTtnb29nbGUuZ2V0TEVJPWZ1bmN0
+      aW9uKGEpe2Zvcih2YXIgYj1udWxsO2EmJighYS5nZXRBdHRyaWJ1dGV8fCEoYj1hLmdldE
+      F0dHJpYnV0ZSgibGVpZCIpKSk7KWE9YS5wYXJlbnROb2RlO3JldHVybiBifTtnb29nbGUu
+      aHR0cHM9ZnVuY3Rpb24oKXtyZXR1cm4iaHR0cHM6Ij09d2luZG93LmxvY2F0aW9uLnByb3
+      RvY29sfTtnb29nbGUubWw9ZnVuY3Rpb24oKXtyZXR1cm4gbnVsbH07Z29vZ2xlLndsPWZ1
+      bmN0aW9uKGEsYil7dHJ5e2dvb2dsZS5tbChFcnJvcihhKSwhMSxiKX1jYXRjaChjKXt9fT
+      tnb29nbGUudGltZT1mdW5jdGlvbigpe3JldHVybihuZXcgRGF0ZSkuZ2V0VGltZSgpfTtn
+      b29nbGUubG9nPWZ1bmN0aW9uKGEsYixjLGQsZyl7YT1nb29nbGUubG9nVXJsKGEsYixjLG
+      QsZyk7aWYoIiIhPWEpe2I9bmV3IEltYWdlO3ZhciBlPWdvb2dsZS5sYyxmPWdvb2dsZS5s
+      aTtlW2ZdPWI7Yi5vbmVycm9yPWIub25sb2FkPWIub25hYm9ydD1mdW5jdGlvbigpe2RlbG
+      V0ZSBlW2ZdfTt3aW5kb3cuZ29vZ2xlJiZ3aW5kb3cuZ29vZ2xlLnZlbCYmd2luZG93Lmdv
+      b2dsZS52ZWwubHUmJndpbmRvdy5nb29nbGUudmVsLmx1KGEpO2Iuc3JjPWE7Z29vZ2xlLm
+      xpPWYrMX19O2dvb2dsZS5sb2dVcmw9ZnVuY3Rpb24oYSxiLGMsZCxnKXt2YXIgZT0iIixm
+      PWdvb2dsZS5sc3x8IiI7Y3x8LTEhPWIuc2VhcmNoKCImZWk9Iil8fChlPSImZWk9Iitnb2
+      9nbGUuZ2V0RUkoZCksLTE9PWIuc2VhcmNoKCImbGVpPSIpJiYoZD1nb29nbGUuZ2V0TEVJ
+      KGQpKSYmKGUrPSImbGVpPSIrZCkpO2E9Y3x8Ii8iKyhnfHwiZ2VuXzIwNCIpKyI/YXR5cD
+      1pJmN0PSIrYSsiJmNhZD0iK2IrZStmKyImeng9Iitnb29nbGUudGltZSgpOy9eaHR0cDov
+      aS50ZXN0KGEpJiZnb29nbGUuaHR0cHMoKSYmKGdvb2dsZS5tbChFcnJvcigiYSIpLCExLH
+      tzcmM6YSxnbG1tOjF9KSxhPSIiKTtyZXR1cm4gYX07Z29vZ2xlLnk9e307Z29vZ2xlLng9
+      ZnVuY3Rpb24oYSxiKXtnb29nbGUueVthLmlkXT1bYSxiXTtyZXR1cm4hMX07Z29vZ2xlLm
+      xxPVtdO2dvb2dsZS5sb2FkPWZ1bmN0aW9uKGEsYixjKXtnb29nbGUubHEucHVzaChbW2Fd
+      LGIsY10pfTtnb29nbGUubG9hZEFsbD1mdW5jdGlvbihhLGIpe2dvb2dsZS5scS5wdXNoKF
+      thLGJdKX07fSkuY2FsbCh0aGlzKTt2YXIgYT13aW5kb3cubG9jYXRpb24sYj1hLmhyZWYu
+      aW5kZXhPZigiIyIpO2lmKDA8PWIpe3ZhciBjPWEuaHJlZi5zdWJzdHJpbmcoYisxKTsvKF
+      58JilxPS8udGVzdChjKSYmLTE9PWMuaW5kZXhPZigiIyIpJiZhLnJlcGxhY2UoIi9zZWFy
+      Y2g/IitjLnJlcGxhY2UoLyhefCYpZnA9W14mXSovZywiIikrIiZjYWQ9aCIpfTs8L3Njcm
+      lwdD48c3R5bGU+I2diYXIsI2d1c2Vye2ZvbnQtc2l6ZToxM3B4O3BhZGRpbmctdG9wOjFw
+      eCAhaW1wb3J0YW50O30jZ2JhcntoZWlnaHQ6MjJweH0jZ3VzZXJ7cGFkZGluZy1ib3R0b2
+      06N3B4ICFpbXBvcnRhbnQ7dGV4dC1hbGlnbjpyaWdodH0uZ2JoLC5nYmR7Ym9yZGVyLXRv
+      cDoxcHggc29saWQgI2M5ZDdmMTtmb250LXNpemU6MXB4fS5nYmh7aGVpZ2h0OjA7cG9zaX
+      Rpb246YWJzb2x1dGU7dG9wOjI0cHg7d2lkdGg6MTAwJX1AbWVkaWEgYWxsey5nYjF7aGVp
+      Z2h0OjIycHg7bWFyZ2luLXJpZ2h0Oi41ZW07dmVydGljYWwtYWxpZ246dG9wfSNnYmFye2
+      Zsb2F0OmxlZnR9fWEuZ2IxLGEuZ2I0e3RleHQtZGVjb3JhdGlvbjp1bmRlcmxpbmUgIWlt
+      cG9ydGFudH1hLmdiMSxhLmdiNHtjb2xvcjojMDBjICFpbXBvcnRhbnR9LmdiaSAuZ2I0e2
+      NvbG9yOiNkZDhlMjcgIWltcG9ydGFudH0uZ2JmIC5nYjR7Y29sb3I6IzkwMCAhaW1wb3J0
+      YW50fQo8L3N0eWxlPjxzdHlsZT5ib2R5LHRkLGEscCwuaHtmb250LWZhbWlseTphcmlhbC
+      xzYW5zLXNlcmlmfWJvZHl7bWFyZ2luOjA7b3ZlcmZsb3cteTpzY3JvbGx9I2dvZ3twYWRk
+      aW5nOjNweCA4cHggMH10ZHtsaW5lLWhlaWdodDouOGVtfS5nYWNfbSB0ZHtsaW5lLWhlaW
+      dodDoxN3B4fWZvcm17bWFyZ2luLWJvdHRvbToyMHB4fS5oe2NvbG9yOiMzNmN9LnF7Y29s
+      b3I6IzAwY30udHMgdGR7cGFkZGluZzowfS50c3tib3JkZXItY29sbGFwc2U6Y29sbGFwc2
+      V9ZW17Zm9udC13ZWlnaHQ6Ym9sZDtmb250LXN0eWxlOm5vcm1hbH0ubHN0e2hlaWdodDoy
+      NXB4O3dpZHRoOjQ5NnB4fS5nc2ZpLC5sc3R7Zm9udDoxOHB4IGFyaWFsLHNhbnMtc2VyaW
+      Z9LmdzZnN7Zm9udDoxN3B4IGFyaWFsLHNhbnMtc2VyaWZ9LmRze2Rpc3BsYXk6aW5saW5l
+      LWJveDtkaXNwbGF5OmlubGluZS1ibG9jazttYXJnaW46M3B4IDAgNHB4O21hcmdpbi1sZW
+      Z0OjRweH1pbnB1dHtmb250LWZhbWlseTppbmhlcml0fWEuZ2IxLGEuZ2IyLGEuZ2IzLGEu
+      Z2I0e2NvbG9yOiMxMWMgIWltcG9ydGFudH1ib2R5e2JhY2tncm91bmQ6I2ZmZjtjb2xvcj
+      pibGFja31he2NvbG9yOiMxMWM7dGV4dC1kZWNvcmF0aW9uOm5vbmV9YTpob3ZlcixhOmFj
+      dGl2ZXt0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lfS5mbCBhe2NvbG9yOiMzNmN9YTp2aX
+      NpdGVke2NvbG9yOiM1NTFhOGJ9YS5nYjEsYS5nYjR7dGV4dC1kZWNvcmF0aW9uOnVuZGVy
+      bGluZX1hLmdiMzpob3Zlcnt0ZXh0LWRlY29yYXRpb246bm9uZX0jZ2hlYWQgYS5nYjI6aG
+      92ZXJ7Y29sb3I6I2ZmZiAhaW1wb3J0YW50fS5zYmxje3BhZGRpbmctdG9wOjVweH0uc2Js
+      YyBhe2Rpc3BsYXk6YmxvY2s7bWFyZ2luOjJweCAwO21hcmdpbi1sZWZ0OjEzcHg7Zm9udC
+      1zaXplOjExcHh9LmxzYmJ7YmFja2dyb3VuZDojZWVlO2JvcmRlcjpzb2xpZCAxcHg7Ym9y
+      ZGVyLWNvbG9yOiNjY2MgIzk5OSAjOTk5ICNjY2M7aGVpZ2h0OjMwcHh9LmxzYmJ7ZGlzcG
+      xheTpibG9ja30uZnRsLCNmbGwgYXtkaXNwbGF5OmlubGluZS1ibG9jazttYXJnaW46MCAx
+      MnB4fS5sc2J7YmFja2dyb3VuZDp1cmwoL2ltYWdlcy9uYXZfbG9nbzIyOS5wbmcpIDAgLT
+      I2MXB4IHJlcGVhdC14O2JvcmRlcjpub25lO2NvbG9yOiMwMDA7Y3Vyc29yOnBvaW50ZXI7
+      aGVpZ2h0OjMwcHg7bWFyZ2luOjA7b3V0bGluZTowO2ZvbnQ6MTVweCBhcmlhbCxzYW5zLX
+      NlcmlmO3ZlcnRpY2FsLWFsaWduOnRvcH0ubHNiOmFjdGl2ZXtiYWNrZ3JvdW5kOiNjY2N9
+      LmxzdDpmb2N1c3tvdXRsaW5lOm5vbmV9LnRpYWh7d2lkdGg6NDU4cHh9PC9zdHlsZT48c2
+      NyaXB0Pjwvc2NyaXB0PjxsaW5rIGhyZWY9Ii9pbWFnZXMvYnJhbmRpbmcvcHJvZHVjdC9p
+      Y28vZ29vZ2xlZ19sb2RwLmljbyIgcmVsPSJzaG9ydGN1dCBpY29uIj48L2hlYWQ+PGJvZH
+      kgYmdjb2xvcj0iI2ZmZiI+PHNjcmlwdD4oZnVuY3Rpb24oKXt2YXIgc3JjPScvaW1hZ2Vz
+      L25hdl9sb2dvMjI5LnBuZyc7dmFyIGllc2c9ZmFsc2U7ZG9jdW1lbnQuYm9keS5vbmxvYW
+      QgPSBmdW5jdGlvbigpe3dpbmRvdy5uICYmIHdpbmRvdy5uKCk7aWYgKGRvY3VtZW50Lmlt
+      YWdlcyl7bmV3IEltYWdlKCkuc3JjPXNyYzt9CmlmICghaWVzZyl7ZG9jdW1lbnQuZiYmZG
+      9jdW1lbnQuZi5xLmZvY3VzKCk7ZG9jdW1lbnQuZ2JxZiYmZG9jdW1lbnQuZ2JxZi5xLmZv
+      Y3VzKCk7fQp9Cn0pKCk7PC9zY3JpcHQ+PGRpdiBpZD0ibW5nYiI+IDxkaXYgaWQ9Z2Jhcj
+      48bm9icj48YiBjbGFzcz1nYjE+V3lzenVraXdhcmthPC9iPiA8YSBjbGFzcz1nYjEgaHJl
+      Zj0iaHR0cDovL3d3dy5nb29nbGUucGwvaW1naHA/aGw9cGwmdGFiPXdpIj5HcmFmaWthPC
+      9hPiA8YSBjbGFzcz1nYjEgaHJlZj0iaHR0cDovL21hcHMuZ29vZ2xlLnBsL21hcHM/aGw9
+      cGwmdGFiPXdsIj5NYXB5PC9hPiA8YSBjbGFzcz1nYjEgaHJlZj0iaHR0cHM6Ly9wbGF5Lm
+      dvb2dsZS5jb20vP2hsPXBsJnRhYj13OCI+UGxheTwvYT4gPGEgY2xhc3M9Z2IxIGhyZWY9
+      Imh0dHA6Ly93d3cueW91dHViZS5jb20vP2dsPVBMJnRhYj13MSI+WW91VHViZTwvYT4gPG
+      EgY2xhc3M9Z2IxIGhyZWY9Imh0dHA6Ly9uZXdzLmdvb2dsZS5wbC9ud3NocD9obD1wbCZ0
+      YWI9d24iPldpYWRvbW+2Y2k8L2E+IDxhIGNsYXNzPWdiMSBocmVmPSJodHRwczovL21haW
+      wuZ29vZ2xlLmNvbS9tYWlsLz90YWI9d20iPkdtYWlsPC9hPiA8YSBjbGFzcz1nYjEgaHJl
+      Zj0iaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tLz90YWI9d28iPkR5c2s8L2E+IDxhIGNsYX
+      NzPWdiMSBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOm5vbmUiIGhyZWY9Imh0dHBzOi8vd3d3
+      Lmdvb2dsZS5wbC9pbnRsL3BsL29wdGlvbnMvIj48dT5XaepjZWo8L3U+ICZyYXF1bzs8L2
+      E+PC9ub2JyPjwvZGl2PjxkaXYgaWQ9Z3VzZXIgd2lkdGg9MTAwJT48bm9icj48c3BhbiBp
+      ZD1nYm4gY2xhc3M9Z2JpPjwvc3Bhbj48c3BhbiBpZD1nYmYgY2xhc3M9Z2JmPjwvc3Bhbj
+      48c3BhbiBpZD1nYmU+PC9zcGFuPjxhIGhyZWY9Imh0dHA6Ly93d3cuZ29vZ2xlLnBsL2hp
+      c3Rvcnkvb3B0b3V0P2hsPXBsIiBjbGFzcz1nYjQ+SGlzdG9yaWEgb25saW5lPC9hPiB8ID
+      xhICBocmVmPSIvcHJlZmVyZW5jZXM/aGw9cGwiIGNsYXNzPWdiND5Vc3Rhd2llbmlhPC9h
+      PiB8IDxhIHRhcmdldD1fdG9wIGlkPWdiXzcwIGhyZWY9Imh0dHBzOi8vYWNjb3VudHMuZ2
+      9vZ2xlLmNvbS9TZXJ2aWNlTG9naW4/aGw9cGwmcGFzc2l2ZT10cnVlJmNvbnRpbnVlPWh0
+      dHA6Ly93d3cuZ29vZ2xlLnBsLyUzRmdmZV9yZCUzRGNyJTI2ZWklM0Q2S19jV0ltVk9hel
+      84QWVkcGI2Z0FnIiBjbGFzcz1nYjQ+WmFsb2d1aiBzaeo8L2E+PC9ub2JyPjwvZGl2Pjxk
+      aXYgY2xhc3M9Z2JoIHN0eWxlPWxlZnQ6MD48L2Rpdj48ZGl2IGNsYXNzPWdiaCBzdHlsZT
+      1yaWdodDowPjwvZGl2PiA8L2Rpdj48Y2VudGVyPjxiciBjbGVhcj0iYWxsIiBpZD0ibGdw
+      ZCI+PGRpdiBpZD0ibGdhIj48ZGl2IHN0eWxlPSJwYWRkaW5nOjI4cHggMCAzcHgiPjxkaX
+      Ygc3R5bGU9ImhlaWdodDoxMTBweDt3aWR0aDoyNzZweDtiYWNrZ3JvdW5kOnVybCgvaW1h
+      Z2VzL2JyYW5kaW5nL2dvb2dsZWxvZ28vMXgvZ29vZ2xlbG9nb193aGl0ZV9iYWNrZ3JvdW
+      5kX2NvbG9yXzI3Mng5MmRwLnBuZykgbm8tcmVwZWF0IiB0aXRsZT0iR29vZ2xlIiBhbGln
+      bj0ibGVmdCIgaWQ9ImhwbG9nbyIgb25sb2FkPSJ3aW5kb3cubG9sJiZsb2woKSI+PGRpdi
+      BzdHlsZT0iY29sb3I6Izc3Nztmb250LXNpemU6MTZweDtmb250LXdlaWdodDpib2xkO3Bv
+      c2l0aW9uOnJlbGF0aXZlO3RvcDo3MHB4O2xlZnQ6MjE4cHgiIG5vd3JhcD0iIj5Qb2xza2
+      E8L2Rpdj48L2Rpdj48L2Rpdj48YnI+PC9kaXY+PGZvcm0gYWN0aW9uPSIvc2VhcmNoIiBu
+      YW1lPSJmIj48dGFibGUgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIj48dHIgdm
+      FsaWduPSJ0b3AiPjx0ZCB3aWR0aD0iMjUlIj4mbmJzcDs8L3RkPjx0ZCBhbGlnbj0iY2Vu
+      dGVyIiBub3dyYXA9IiI+PGlucHV0IG5hbWU9ImllIiB2YWx1ZT0iSVNPLTg4NTktMiIgdH
+      lwZT0iaGlkZGVuIj48aW5wdXQgdmFsdWU9InBsIiBuYW1lPSJobCIgdHlwZT0iaGlkZGVu
+      Ij48aW5wdXQgbmFtZT0ic291cmNlIiB0eXBlPSJoaWRkZW4iIHZhbHVlPSJocCI+PGlucH
+      V0IG5hbWU9ImJpdyIgdHlwZT0iaGlkZGVuIj48aW5wdXQgbmFtZT0iYmloIiB0eXBlPSJo
+      aWRkZW4iPjxkaXYgY2xhc3M9ImRzIiBzdHlsZT0iaGVpZ2h0OjMycHg7bWFyZ2luOjRweC
+      AwIj48ZGl2IHN0eWxlPSJwb3NpdGlvbjpyZWxhdGl2ZTt6b29tOjEiPjxpbnB1dCBzdHls
+      ZT0iY29sb3I6IzAwMDttYXJnaW46MDtwYWRkaW5nOjVweCA4cHggMCA2cHg7dmVydGljYW
+      wtYWxpZ246dG9wO3BhZGRpbmctcmlnaHQ6MzhweCIgYXV0b2NvbXBsZXRlPSJvZmYiIGNs
+      YXNzPSJsc3QgdGlhaCIgdmFsdWU9IiIgdGl0bGU9IlN6dWthaiB3IEdvb2dsZSIgbWF4bG
+      VuZ3RoPSIyMDQ4IiBuYW1lPSJxIiBzaXplPSI1NyI+PGltZyBzcmM9Ii90ZXh0aW5wdXRh
+      c3Npc3RhbnQvdGlhLnBuZyIgc3R5bGU9InBvc2l0aW9uOmFic29sdXRlO2N1cnNvcjpwb2
+      ludGVyO3JpZ2h0OjVweDt0b3A6NHB4O3otaW5kZXg6MzAwIiBvbmNsaWNrPSIoZnVuY3Rp
+      b24oKXt2YXIgc3JjPScvdGV4dGlucHV0YXNzaXN0YW50LzExL3BsX3RpYS5qcyc7dmFyIH
+      M9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7cy5zcmM9c3JjO2dvb2dsZS5k
+      b20uYXBwZW5kKHMpO30pKCk7IiBhbHQ9IiIgaGVpZ2h0PSIyMyIgd2lkdGg9IjI3Ij48L2
+      Rpdj48L2Rpdj48YnIgc3R5bGU9ImxpbmUtaGVpZ2h0OjAiPjxzcGFuIGNsYXNzPSJkcyI+
+      PHNwYW4gY2xhc3M9ImxzYmIiPjxpbnB1dCBjbGFzcz0ibHNiIiB2YWx1ZT0iU3p1a2FqIH
+      cgR29vZ2xlIiBuYW1lPSJidG5HIiB0eXBlPSJzdWJtaXQiPjwvc3Bhbj48L3NwYW4+PHNw
+      YW4gY2xhc3M9ImRzIj48c3BhbiBjbGFzcz0ibHNiYiI+PGlucHV0IGNsYXNzPSJsc2IiIH
+      ZhbHVlPSJTemN66rZsaXd5IHRyYWYiIG5hbWU9ImJ0bkkiIG9uY2xpY2s9ImlmKHRoaXMu
+      Zm9ybS5xLnZhbHVlKXRoaXMuY2hlY2tlZD0xOyBlbHNlIHRvcC5sb2NhdGlvbj0nL2Rvb2
+      RsZXMvJyIgdHlwZT0ic3VibWl0Ij48L3NwYW4+PC9zcGFuPjwvdGQ+PHRkIGNsYXNzPSJm
+      bCBzYmxjIiBhbGlnbj0ibGVmdCIgbm93cmFwPSIiIHdpZHRoPSIyNSUiPjxhIGhyZWY9Ii
+      9hZHZhbmNlZF9zZWFyY2g/aGw9cGwmYW1wO2F1dGh1c2VyPTAiPlN6dWthbmllIHphYXdh
+      bnNvd2FuZTwvYT48YSBocmVmPSIvbGFuZ3VhZ2VfdG9vbHM/aGw9cGwmYW1wO2F1dGh1c2
+      VyPTAiPk5hcnrqZHppYSBq6np5a293ZTwvYT48L3RkPjwvdHI+PC90YWJsZT48aW5wdXQg
+      aWQ9ImdidiIgbmFtZT0iZ2J2IiB0eXBlPSJoaWRkZW4iIHZhbHVlPSIxIj48L2Zvcm0+PG
+      RpdiBpZD0iZ2FjX3Njb250Ij48L2Rpdj48ZGl2IHN0eWxlPSJmb250LXNpemU6ODMlO21p
+      bi1oZWlnaHQ6My41ZW0iPjxicj48ZGl2IGlkPSJwcm0iPjxzdHlsZT4uc3pwcG1kYll1dH
+      RfX21pZGRsZS1zbG90LXByb21ve2ZvbnQtc2l6ZTpzbWFsbDttYXJnaW4tYm90dG9tOjMy
+      cHh9LnN6cHBtZGJZdXR0X19taWRkbGUtc2xvdC1wcm9tbyBhLl91Rml7ZGlzcGxheTppbm
+      xpbmUtYmxvY2s7dGV4dC1kZWNvcmF0aW9uOm5vbmV9LnN6cHBtZGJZdXR0X19taWRkbGUt
+      c2xvdC1wcm9tbyBpbWd7Ym9yZGVyOm5vbmU7bWFyZ2luLXJpZ2h0OjVweDt2ZXJ0aWNhbC
+      1hbGlnbjptaWRkbGV9LnN6cHBtZGJZdXR0X19taWRkbGUtc2xvdC1wcm9tbyAuX3ZGaXtj
+      b2xvcjpyZWR9PC9zdHlsZT48ZGl2IGNsYXNzPSJzenBwbWRiWXV0dF9fbWlkZGxlLXNsb3
+      QtcHJvbW8gci1peDJfMDdJcmdZVlUiIGpzbD0iJHQgdC1HemEwN0hvOUVuNDskeCAwOyIg
+      ZGF0YS12ZWQ9IjBhaFVLRXdqZ3JialoxdjNTQWhYRmZ4b0tIUzJZRG1BUW5JY0JDQVEiPk
+      NoY2VzeiBkb3RyemXmIG5hIGtvbmllYyC2d2lhdGE/IDxhIGNsYXNzPSJfWElpIiBocmVm
+      PSJodHRwczovL3d3dy5nb29nbGUuY29tL3VybD9xPWh0dHBzOi8vd3d3Lmdvb2dsZS5jb2
+      0vbWFwcy8lNDA2MS4wMTc1MDQsLTQ1LjI5OTQ2NiwzYSw3NXksMjQ4LjIxaCw4MS45MXQv
+      ZGF0YSUzRCEzbTYhMWUxITNtNCExc3hSaF8wM21ndmQ3azREWVpoTHlfZkEhMmUwITdpMT
+      MzMTIhOGk2NjkwJmFtcDtzb3VyY2U9aHBwJmFtcDtpZD0xOTAwMTkyMiZhbXA7Y3Q9MyZh
+      bXA7dXNnPUFGUWpDTkhZclViRVNRRnE0VS1pSzJ6S29GbTZNY2Z0d3cmYW1wO3NhPVgmYW
+      1wO3ZlZD0wYWhVS0V3amdyYmpaMXYzU0FoWEZmeG9LSFMyWURtQVE4SWNCQ0FVIiByZWw9
+      Im5vZm9sbG93Ij5ad2llZLwgR3JlbmxhbmRp6jwvYT4gdyBNYXBhY2ggR29vZ2xlLjwvZG
+      l2PjwvZGl2PjwvZGl2PjxzcGFuIGlkPSJmb290ZXIiPjxkaXYgc3R5bGU9ImZvbnQtc2l6
+      ZToxMHB0Ij48ZGl2IHN0eWxlPSJtYXJnaW46MTlweCBhdXRvO3RleHQtYWxpZ246Y2VudG
+      VyIiBpZD0iZmxsIj48YSBocmVmPSIvaW50bC9wbC9hZHMvIj5SZWtsYW11aiBzaeogdyBH
+      b29nbGU8L2E+PGEgaHJlZj0iaHR0cDovL3d3dy5nb29nbGUucGwvaW50bC9wbC9zZXJ2aW
+      Nlcy8iPlJvendpsXphbmlhIGRsYSBmaXJtPC9hPjxhIGhyZWY9Imh0dHBzOi8vcGx1cy5n
+      b29nbGUuY29tLzEwMjQwNzM3NjY0OTQ0NjQxNTM2OSIgcmVsPSJwdWJsaXNoZXIiPitHb2
+      9nbGU8L2E+PGEgaHJlZj0iL2ludGwvcGwvYWJvdXQuaHRtbCI+V3N6eXN0a28gbyBHb29n
+      bGU8L2E+PGEgaHJlZj0iaHR0cDovL3d3dy5nb29nbGUucGwvc2V0cHJlZmRvbWFpbj9wcm
+      VmZG9tPVVTJmFtcDtzaWc9X19KNzBBRFJNRWNQejZfNXl3WEFaYzFwQVlZU00lM0QiIGlk
+      PSJmZWhsIj5Hb29nbGUuY29tPC9hPjwvZGl2PjwvZGl2PjxwIHN0eWxlPSJjb2xvcjojNz
+      Y3Njc2O2ZvbnQtc2l6ZTo4cHQiPiZjb3B5OyAyMDE3IC0gPGEgaHJlZj0iL2ludGwvcGwv
+      cG9saWNpZXMvcHJpdmFjeS8iPlByeXdhdG5vtuY8L2E+IC0gPGEgaHJlZj0iL2ludGwvcG
+      wvcG9saWNpZXMvdGVybXMvIj5XYXJ1bmtpPC9hPjwvcD48L3NwYW4+PC9jZW50ZXI+PHNj
+      cmlwdD4oZnVuY3Rpb24oKXt3aW5kb3cuZ29vZ2xlLmNkbz17aGVpZ2h0OjAsd2lkdGg6MH
+      07KGZ1bmN0aW9uKCl7dmFyIGE9d2luZG93LmlubmVyV2lkdGgsYj13aW5kb3cuaW5uZXJI
+      ZWlnaHQ7aWYoIWF8fCFiKXZhciBjPXdpbmRvdy5kb2N1bWVudCxkPSJDU1MxQ29tcGF0Ij
+      09Yy5jb21wYXRNb2RlP2MuZG9jdW1lbnRFbGVtZW50OmMuYm9keSxhPWQuY2xpZW50V2lk
+      dGgsYj1kLmNsaWVudEhlaWdodDthJiZiJiYoYSE9Z29vZ2xlLmNkby53aWR0aHx8YiE9Z2
+      9vZ2xlLmNkby5oZWlnaHQpJiZnb29nbGUubG9nKCIiLCIiLCIvY2xpZW50XzIwND8mYXR5
+      cD1pJmJpdz0iK2ErIiZiaWg9IitiKyImZWk9Iitnb29nbGUua0VJKTt9KS5jYWxsKHRoaX
+      MpO30pKCk7PC9zY3JpcHQ+PGRpdiBpZD0ieGpzZCI+PC9kaXY+PGRpdiBpZD0ieGpzaSI+
+      PHNjcmlwdD4oZnVuY3Rpb24oKXtmdW5jdGlvbiBjKGIpe3dpbmRvdy5zZXRUaW1lb3V0KG
+      Z1bmN0aW9uKCl7dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5z
+      cmM9Yjtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgieGpzZCIpLmFwcGVuZENoaWxkKGEpfS
+      wwKX1nb29nbGUuZGxqcD1mdW5jdGlvbihiLGEpe2dvb2dsZS54anN1PWI7YyhhKX07Z29v
+      Z2xlLmRsaj1jO30pLmNhbGwodGhpcyk7KGZ1bmN0aW9uKCl7d2luZG93Lmdvb2dsZS54an
+      NybT1bJ21pZHMnXTt9KSgpO2lmKGdvb2dsZS55KWdvb2dsZS55LmZpcnN0PVtdO2lmKCFn
+      b29nbGUueGpzKXt3aW5kb3cuXz13aW5kb3cuX3x8e307d2luZG93Ll9EdW1wRXhjZXB0aW
+      9uPXdpbmRvdy5fLl9EdW1wRXhjZXB0aW9uPWZ1bmN0aW9uKGUpe3Rocm93IGV9O2lmKGdv
+      b2dsZS50aW1lcnMmJmdvb2dsZS50aW1lcnMubG9hZC50KXtnb29nbGUudGltZXJzLmxvYW
+      QudC54anNscz1uZXcgRGF0ZSgpLmdldFRpbWUoKTt9Z29vZ2xlLmRsanAoJy94anMvXy9q
+      cy9rXHgzZHhqcy5ocC5lbl9VUy5xN0V1Q1ZJZmRady5PL21ceDNkc2JfaGUsZC9hbVx4M2
+      RBQWcvcnRceDNkai9kXHgzZDEvdFx4M2R6Y21zL3JzXHgzZEFDVDkwb0hGM3BXRjFuRmo5
+      cDNNLWJ6Y0ZiS3FQM19HRHcnLCcveGpzL18vanMva1x4M2R4anMuaHAuZW5fVVMucTdFdU
+      NWSWZkWncuTy9tXHgzZHNiX2hlLGQvYW1ceDNkQUFnL3J0XHgzZGovZFx4M2QxL3RceDNk
+      emNtcy9yc1x4M2RBQ1Q5MG9IRjNwV0YxbkZqOXAzTS1iemNGYktxUDNfR0R3Jyk7Z29vZ2
+      xlLnhqcz0xO31nb29nbGUucG1jPXsic2JfaGUiOnsiYWdlbiI6dHJ1ZSwiY2dlbiI6dHJ1
+      ZSwiY2xpZW50IjoiaGVpcmxvb20taHAiLCJkaCI6dHJ1ZSwiZGhxdCI6dHJ1ZSwiZHMiOi
+      IiLCJmbCI6dHJ1ZSwiaG9zdCI6Imdvb2dsZS5wbCIsImlzYmgiOjI4LCJqYW0iOjAsImpz
+      b25wIjp0cnVlLCJtc2dzIjp7ImNpYmwiOiJXeWN6ebbmIHd5c3p1a2l3YW5pZSIsImR5bS
+      I6IkN6eSBjaG9kemmzbyBDaSBvOiIsImxja3kiOiJTemN66rZsaXd5IHRyYWYiLCJsbWwi
+      OiJXaepjZWogaW5mb3JtYWNqaSIsIm9za3QiOiJOYXJ66mR6aWEgZG8gd3Byb3dhZHphbm
+      lhIHRla3N0dSIsInBzcmMiOiJUbyB3eXN6dWtpd2FuaWUgem9zdGGzbyB1c3Vuaep0ZSB6
+      IFR3b2plaiBcdTAwM0NhIGhyZWY9XCIvaGlzdG9yeVwiXHUwMDNFSGlzdG9yaWkgb25saW
+      5lXHUwMDNDL2FcdTAwM0UiLCJwc3JsIjoiVXN18SIsInNiaXQiOiJXeXN6dWtpd2FuaWUg
+      b2JyYXplbSIsInNyY2giOiJTenVrYWogdyBHb29nbGUifSwibmRzIjp0cnVlLCJvdnIiOn
+      t9LCJwcSI6IiIsInJlZnBkIjp0cnVlLCJyZnMiOltdLCJzYnBsIjoyNCwic2JwciI6MjQs
+      InNjZCI6MTAsInNjZSI6NSwic3RvayI6Ikd0eU14cXgxcjdxVEk0STZqVDJ3bzBpQ1pycy
+      J9LCJkIjp7fSwiWUZDcy9nIjp7fX07Z29vZ2xlLnkuZmlyc3QucHVzaChmdW5jdGlvbigp
+      e2lmKGdvb2dsZS5tZWQpe2dvb2dsZS5tZWQoJ2luaXQnKTtnb29nbGUuaW5pdEhpc3Rvcn
+      koKTtnb29nbGUubWVkKCdoaXN0b3J5Jyk7fX0pO2lmKGdvb2dsZS5qJiZnb29nbGUuai5l
+      biYmZ29vZ2xlLmoueGkpe3dpbmRvdy5zZXRUaW1lb3V0KGdvb2dsZS5qLnhpLDApO30KPC
+      9zY3JpcHQ+PC9kaXY+PC9ib2R5PjwvaHRtbD4=
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/html; charset=ISO-8859-2
+      Date:
+      - Thu, 30 Mar 2017 07:12:41 GMT
+      Expires:
+      - "-1"
+      P3p:
+      - CP="This is not a P3P policy! See https://www.google.com/support/accounts/answer/151657?hl=en
+        for more info."
+      Retry-Count:
+      - "0"
+      Server:
+      - gws
+      Set-Cookie:
+      - NID=100=JkpOVUmFk7XRZO8Cuk4-EVMxg0eMLcIdCB93QKY2r8KRewig9jGyluUdWnkAzKYucPdfY74SclYsIEGaHdNMMeCnMWAjMMSqtmcX1vJScb4cWg-HrRLPURoQqSdZbtRm;
+        expires=Fri, 29-Sep-2017 07:12:41 GMT; path=/; domain=.google.pl; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+    status: 200 OK
+    code: 200
+- request:
+    body: ""
+    form: {}
+    headers:
+      Content-Type:
+      - application/json
+    url: https://10.52.208.160
+    method: GET
+  response:
+    body: "    <!DOCTYPE html>\r\n    <html>\r\n        <head>\r\n            <title>Cisco
+      UCS Manager</title>\r\n            <link href=\"favicon.ico\" rel=\"shortcut
+      icon\">\r\n            <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n\r\n
+      \           <!-- Bootstrap -->\r\n            <link href=\"images/bootstrap/css/bootstrap.min.css\"
+      rel=\"stylesheet\" media=\"screen\">\r\n            <link href=\"css/style.css\"
+      rel=\"stylesheet\" media=\"screen\">\r\n            \r\n            <!-- HTML5
+      Shim and Respond.js IE8 support of HTML5 elements and media queries -->\r\n
+      \           <!-- WARNING: Respond.js doesn't work if you view the page via file://
+      -->\r\n            <!--[if lt IE 9]>\r\n              <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\r\n
+      \             <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\r\n
+      \           <![endif]-->\r\n        </head>\r\n        <body onload=\"javascript:writeVarData();\">\r\n
+      \           <div class=\"container\">\r\n                <div class=\"jumbotron\">\r\n
+      \                   <div class=\"row-fluid\">\r\n                        <div
+      class=\"span2 logo\">\r\n                            <img class=\"logoImg\"
+      src=\"images/Nuova.128.png\" />\r\n                        </div>\r\n                        <div
+      class=\"span10 jumbotronContent\">\r\n                            <h1 class=\"jumbotronTitle\">Cisco
+      Unified Computing System (UCS) Manager</h1> \r\n                            <div
+      class=\"row-fluid\">\r\n                                <div class=\"span12\">\r\n
+      \                                   <span class=\"tagline pull-left\">Single
+      point device management for Cisco UCS</span>\r\n                                    <span
+      class=\"version pull-right\">2.2(3e)</span>\r\n                                </div>\r\n
+      \                           </div>\r\n                        </div>\r\n                    </div>\r\n
+      \               </div>\r\n                <div class=\"row-fluid launchBtnsContainer\">\r\n
+      \                   <div class=\"span2\"></div>\r\n                    <div
+      class=\"span10\">\r\n                        <div class=\"row-fluid\">\r\n                            <div
+      id=\"LAUNCH\" class=\"span5 launchBtnSpan\">\r\n                                <a
+      class=\"launchBtn btn btn-primary btn-large btn-block\" href=\"ucsm/ucsm.jnlp\"
+      role=\"button\">Launch UCS Manager</a>\r\n                                <span>Requires
+      <a href=\"http://java.com/en/download/manual.jsp\">Java Runtime Environment</a>
+      1.6 or higher</span>\r\n                            </div>\r\n                            <div
+      id=\"EXPRESS\" class=\"span5 launchBtnSpan\" style=\"display:none;\">\r\n                                <a
+      class=\"launchBtn btn btn-primary btn-large btn-block\" href=\"cgi-bin/main.cgi\"
+      role=\"button\">Express Setup</a>\r\n                            </div>\r\n
+      \                           <div class=\"span5 launchBtnSpan\">\r\n                                <a
+      class=\"launchBtn kvmLmBtn btn btn-primary btn-large btn-block\" href=\"ucsm/kvm.html\"
+      role=\"button\">Launch KVM Manager</a>\r\n                            </div>\r\n
+      \                       </div>\r\n                    </div>\r\n                </div>\r\n
+      \               <div class=\"row-fluid ucsInfo\">\r\n                    <div
+      class=\"span10 offset1\">\r\n                        <!-- Button to trigger
+      modal -->\r\n                        <label class=\"checkbox\">\r\n                            <input
+      id=\"doNotDisplayCheckBox\" type=\"checkbox\"> Do Not Show Again? \r\n                        </label>\r\n
+      \                   </div>\r\n                </div>\r\n                <div
+      class=\"row-fluid ucsInfo\">\r\n                    <div class=\"span10 offset1\">\r\n
+      \                       <div id=\"ucscCarousel\" class=\"carousel slide\">\r\n
+      \                           <ol class=\"carousel-indicators\">\r\n                                <li
+      data-target=\"#ucscCarousel\" data-slide-to=\"0\" class=\"active\"></li>\r\n
+      \                               <li data-target=\"#ucscCarousel\" data-slide-to=\"1\"
+      class=\"\"></li>\r\n                                <li data-target=\"#ucscCarousel\"
+      data-slide-to=\"2\" class=\"\"></li>\r\n                                <li
+      data-target=\"#ucscCarousel\" data-slide-to=\"3\" class=\"\"></li>\r\n                                <li
+      data-target=\"#ucscCarousel\" data-slide-to=\"4\" class=\"\"></li>\r\n                            </ol>\r\n
+      \                           <!-- Carousel items -->\r\n                            <div
+      class=\"carousel-inner\">\r\n                                <div class=\"item
+      active\">\r\n                                    <img alt=\"Information Dashboard\"
+      src=\"images/stats.jpg\">\r\n                                    <div class=\"carousel-caption\">\r\n
+      \                                       <h3>Information Dashboard</h3>\r\n                                        <p>Centralized
+      hardware inventory, centralized faults/logs, and up to one year of statistics</p>\r\n
+      \                                   </div>\r\n                                </div>\r\n
+      \                               <div class=\"item\">\r\n                                    <img
+      alt=\"Administrative Configuration\" src=\"images/pools.jpg\">\r\n                                    <div
+      class=\"carousel-caption\">\r\n                                        <h3>Administrative
+      Configuration</h3>\r\n                                        <p>Cross-domain
+      administrative settings and cross-domain ID pools that new UCS Manager instances
+      have access to upon registration</p>\r\n                                    </div>\r\n
+      \                               </div>\r\n                                <div
+      class=\"item\">\r\n                                    <img alt=\"Operational
+      Control\" src=\"images/faults.jpg\">\r\n                                    <div
+      class=\"carousel-caption\">\r\n                                        <h3>Operational
+      Control</h3>\r\n                                        <p>Global policies and
+      settings that can deployed and enforced across domains</p>\r\n                                    </div>\r\n
+      \                               </div>\r\n                                <div
+      class=\"item\">\r\n                                    <img alt=\"Workload Mobility\"
+      src=\"images/policies.jpg\">\r\n                                    <div class=\"carousel-caption\">\r\n
+      \                                       <h3>Workload Mobility</h3>\r\n                                        <p>Global
+      Service Profiles with optional site specific settings for localization</p>\r\n
+      \                                   </div>\r\n                                </div>\r\n
+      \                               <div class=\"item\">\r\n                                    <img
+      alt=\"Centralized Backup\" src=\"images/backups.jpg\">\r\n                                    <div
+      class=\"carousel-caption\">\r\n                                        <h3>Centralized
+      Backup</h3>\r\n                                        <p>Scheduled backup of
+      UCS Manager and UCS Central instances.<!-- Automated backups to a central location
+      improves resiliency with minimal administrative impact.--></p>\r\n                                    </div>\r\n
+      \                               </div>\r\n                            </div>\r\n
+      \                           <!-- Carousel nav -->\r\n                            <a
+      class=\"carousel-control left\" href=\"#ucscCarousel\" data-slide=\"prev\">&lsaquo;</a>\r\n
+      \                           <a class=\"carousel-control right\" href=\"#ucscCarousel\"
+      data-slide=\"next\">&rsaquo;</a>\r\n                        </div>\r\n                    </div>\r\n
+      \               </div>\r\n                <div class=\"row-fluid ucsInfo\">\r\n
+      \                   <a class=\"ucscLink launchBtn btn btn-primary btn-block\"
+      href=\"http://www.cisco.com/c/en/us/support/servers-unified-computing/ucs-central-software/tsd-products-support-series-home.html\"
+      role=\"button\">Download UCS Central</a>\r\n                </div>\r\n                <div
+      class=\"row-fluid footer\">\r\n                \t<div class=\"span2\">\r\n                \t\t<a
+      href=\"http://www.cisco.com/support\"><img class=\"ciscoLogo\" src=\"images/cisco_logo.png\"
+      /></a>\r\n                \t</div>\r\n                    <div class=\"span10\">\r\n
+      \                       <div class=\"row-fluid copyrightContainer\">\r\n                            <div
+      class=\"span12\">\r\n                                <p>&copy; 2009-2014 Cisco
+      Systems, Inc. All rights reserved.</p>\r\n                                <p>The
+      copyrights to certain works contained in this software are owned by other third
+      parties and used and distributed under license. Certain components of this software
+      are licensed under the GNU General Public License (GPL) version 2.0 or the GNU
+      <a href=\"http://www.opensource.org/licenses/gpl-2.0.php\">gpl 2.0</a> and<a
+      href=\"http://www.opensource.org/licenses/lgpl-2.1.php\"> lgpl 2.1</a></p>\r\n
+      \                           </div>\r\n                        </div>\r\n                        <div
+      class=\"row-fluid footerLinksContainer\">\r\n                            <div
+      class=\"span12 ciscoLinks\">\r\n                                <a href=\"javascript:openLargePopup('http://www.cisco.com/web/siteassets/legal/terms_condition.html')\">Terms
+      and Conditions</a> &raquo;\r\n                                <a href=\"javascript:openLargePopup('http://www.cisco.com/web/siteassets/legal/privacy.html');\">Privacy
+      Statement</a> &raquo;\r\n                                <a href=\"javascript:openLargePopup('http://www.cisco.com/web/siteassets/legal/privacy.html#cookies');\">Cookie
+      Policy</a> &raquo;\r\n                                <a href=\"javascript:openLargePopup('http://www.cisco.com/web/siteassets/legal/trademark.html');\">Trademarks
+      of Cisco Systems, Inc.</a>\r\n                            </div>\r\n                        </div>\r\n
+      \                   </div>\r\n                </div>\r\n            </div>\r\n
+      \           <script src=\"images/js/jquery-1.11.0.min.js\"></script>\r\n            <script
+      src=\"images/bootstrap/js/bootstrap.min.js\"></script>\r\n            <script
+      src=\"images/js/main.js\"></script>\r\n        </body>\r\n    </html>"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - "9851"
+      Content-Type:
+      - text/html
+      Date:
+      - Thu, 30 Mar 2017 07:12:45 GMT
+      Last-Modified:
+      - Mon, 25 Jan 2016 14:23:01 GMT
+      Retry-Count:
+      - "0"
+      Server:
+      - Apache/2.2.25 (Unix) mod_ssl/2.2.25 OpenSSL/FIPS
+    status: 200 OK
+    code: 200
+- request:
+    body: ""
+    form: {}
+    headers:
+      Content-Type:
+      - application/json
+    url: http://msn.com
+    method: GET
+  response:
+    body: |-
+      <head><title>Document Moved</title></head>
+      <body><h1>Object Moved</h1>This document may be found <a HREF="http://www.msn.com/">here</a></body>
+    headers:
+      Content-Length:
+      - "142"
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 30 Mar 2017 07:12:42 GMT
+      Location:
+      - http://www.msn.com/
+      Server:
+      - Microsoft-IIS/8.5
+      X-Powered-By:
+      - ASP.NET
+    status: 301 Moved Permanently
+    code: 301
+- request:
+    body: ""
+    form: {}
+    headers:
+      Content-Type:
+      - application/json
+      Referer:
+      - http://msn.com
+    url: http://www.msn.com/
+    method: GET
+  response:
+    body: "<html><head><title>Object moved</title></head><body>\r\n<h2>Object moved
+      to <a href=\"http://www.msn.com/nl-nl/\">here</a>.</h2>\r\n</body></html>\r\n"
+    headers:
+      Access-Control-Allow-Methods:
+      - HEAD,GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, no-store, no-transform
+      Content-Length:
+      - "142"
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Thu, 30 Mar 2017 07:12:41 GMT
+      Expires:
+      - "-1"
+      Location:
+      - http://www.msn.com/nl-nl/
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/10.0
+      Set-Cookie:
+      - PreferencesMsn=eyJIb21lUGFnZSI6eyJTdHJpcGVzIjpbXSwiTWVTdHJpcGVNb2R1bGVzIjpbXSwiTWFya2V0Q29uZmlndXJhdGlvbiI6eyJNYXJrZXQiOiJubC1ubCIsIlN1cHByZXNzUHJvbXB0IjpmYWxzZSwiUHJlZmVycmVkTGFuZ3VhZ2VDb2RlIjoibmwtbmwiLCJDb3VudHJ5Q29kZSI6Ik5MIn19LCJFeHBpcnlUaW1lIjo2MzY1Nzk5MDc1OTc5NDU5MTYsIlZlcnNpb24iOjF90;
+        domain=msn.com; expires=Fri, 30-Mar-2018 07:12:39 GMT; path=/; HttpOnly
+      - marketPref=nl-nl; domain=msn.com; expires=Fri, 30-Mar-2018 07:12:39 GMT; path=/;
+        HttpOnly
+      - _EDGE_S=F=1; path=/; httponly; domain=msn.com
+      - _EDGE_V=1; path=/; httponly; expires=Sat, 30-Mar-2019 07:12:41 GMT; domain=msn.com
+      - MUID=2E9CE8CA2B0F6BBC286CE29F2A7B6A14; path=/; expires=Sat, 30-Mar-2019 07:12:41
+        GMT; domain=msn.com
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - User-Agent
+      Via:
+      - 1.1 aer01-mda2-dmz-wsa-4-mgmt.cisco.com:80 (Cisco-WSA/10.1.0-204)
+      X-Activity-Id:
+      - dabecaec-b0f3-410b-af4e-5c4af730781e
+      X-Appversion:
+      - 2.0.6295.359
+      X-Aspnetmvc-Version:
+      - "5.2"
+      X-Az:
+      - '{did:be817c76e7924bfa88c6d1161944fb06, rid: 38, sn: eastus-prod-hp, dt: 2017-02-15T08:24:20.4531011Z,
+        bt: 2017-03-27T00:12:16.1541402Z}'
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Msedge-Ref:
+      - 'Ref A: DABECAECB0F3410BAF4E5C4AF730781E Ref B: AM1EDGE0618 Ref C: Thu Mar
+        30 00:12:41 2017 PST'
+      X-Powered-By:
+      - ASP.NET
+      X-Ua-Compatible:
+      - IE=Edge;chrome=1
+      X-Xss-Protection:
+      - "1"
+    status: 302 Found
+    code: 302
+- request:
+    body: ""
+    form: {}
+    headers:
+      Content-Type:
+      - application/json
+      Cookie:
+      - PreferencesMsn=eyJIb21lUGFnZSI6eyJTdHJpcGVzIjpbXSwiTWVTdHJpcGVNb2R1bGVzIjpbXSwiTWFya2V0Q29uZmlndXJhdGlvbiI6eyJNYXJrZXQiOiJubC1ubCIsIlN1cHByZXNzUHJvbXB0IjpmYWxzZSwiUHJlZmVycmVkTGFuZ3VhZ2VDb2RlIjoibmwtbmwiLCJDb3VudHJ5Q29kZSI6Ik5MIn19LCJFeHBpcnlUaW1lIjo2MzY1Nzk5MDc1OTc5NDU5MTYsIlZlcnNpb24iOjF90;
+        marketPref=nl-nl; _EDGE_S=F=1; _EDGE_V=1; MUID=2E9CE8CA2B0F6BBC286CE29F2A7B6A14
+      Referer:
+      - http://www.msn.com/
+    url: http://www.msn.com/nl-nl/
+    method: GET
+  response:
+    body: "\n<!DOCTYPE html>\n<html>\n<head>\n<meta name=\"viewport\" content=\"width=device-width,
+      initial-scale=1.0\" />\r\n    <title>MSN</title>\r\n    <style>\r\n    .accept\r\n
+      \   {\r\n        background: #1679c3;\r\n        border: none;\r\n        color:
+      white;\r\n        display: block;\r\n        font-size: 15px;\r\n        height:
+      46px;\r\n        margin: auto;\r\n        margin-bottom: 25px;\r\n        width:
+      150px;\r\n    }\r\n    .accept:hover\r\n    {\r\n        cursor: pointer;\r\n
+      \   }\r\n    body\r\n    {\r\n        background: #d5d4d0;\r\n        font-family:
+      \"Segoe UI\", \"Segoe WP\", Arial, sans-serif;\r\n        font-size: 15px;\r\n
+      \       margin: 0;\r\n        overflow: hidden;\r\n        padding: 0;\r\n    }\r\n
+      \   #cacpageoverlay\r\n    {\r\n        background: #fff;\r\n        display:
+      block;\r\n        margin: auto;\r\n        min-width: 350px;\r\n        padding:
+      25px 35px;\r\n        position: relative;\r\n        top: 100px;\r\n        width:
+      641px;\r\n    }\r\n    #cacpageoverlay h3, #cacpagestatement h1\r\n    {\r\n
+      \       color: #167ab7;\r\n        font-family: \"Segoe UI Light\", \"Segoe
+      UI\", \"Segoe WP\", Arial, sans-serif;\r\n        font-size: 28px;\r\n        margin:
+      auto;\r\n        text-align: center;\r\n    }\r\n    #cacpagestatement .accept\r\n
+      \   {\r\n        margin-left: 0;\r\n    }\r\n    #cacpagestatement h1\r\n    {\r\n
+      \       color: #000;\r\n        font-size: 48px;\r\n        text-align: left;\r\n
+      \   }\r\n    #cacpagestatement .msnlogo\r\n    {\r\n        margin-left: 0;\r\n
+      \   }\r\n    #cacpageoverlay p\r\n    {\r\n        margin: 10px 3px 25px;\r\n
+      \   }\r\n    #cacpagestatement\r\n    {\r\n        display: none;\r\n        height:
+      100%;\r\n        margin: 2% 4%;\r\n        font-size: 16px;\r\n    }\r\n     .copyright\r\n
+      \   {\r\n        color: #333;\r\n        display: block;\r\n        font-size:
+      11px;\r\n        font-weight: lighter;\r\n        margin: -10px auto auto auto;\r\n
+      \       text-align: left;\r\n        text-decoration: none;\r\n    }\r\n    .msnlogo\r\n
+      \   {\r\n        display: block;\r\n        margin: 0 auto 12px auto;\r\n    }\r\n
+      \   .learnmore\r\n    {\r\n        text-decoration: none;\r\n    }\r\n    .mslogo\r\n
+      \   {\r\n        display: block;\r\n        margin: auto;\r\n        margin-left:
+      -20px;\r\n        width: 142.76px;\r\n    }\r\n    .statementprefix\r\n    {\r\n
+      \       margin-bottom: 1%;\r\n        margin-top: 10px;\r\n    }\r\n    #msnstaticpage\r\n
+      \   {\r\n        display: block;\r\n        left: 0;\r\n        margin: 0 auto;\r\n
+      \       position: absolute;\r\n        right: 0;\r\n    }\r\n    #darkscreen\r\n
+      \   {\r\n        background: #000;\r\n        height: 100%;\r\n        /*do
+      NOT change the order of the following opacity rules*/\r\n        -ms-filter:
+      \"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)\";\r\n        filter:
+      progid:DXImageTransform.Microsoft.Alpha(Opacity=70);\r\n        opacity: .7;\r\n
+      \       position: fixed;\r\n        width: 100%;\r\n    }\r\n    strong\r\n
+      \   {\r\n        font-size: 26px;\r\n        font-weight: normal;\r\n    }\r\n
+      \   table\r\n    {\r\n        border-collapse: collapse;\r\n    }\r\n    table,
+      td\r\n    {\r\n        border: 1px solid #000;\r\n        padding: 0 10px;\r\n
+      \   }\r\n    thead\r\n    {\r\n        border: 2px solid #000;\r\n    }\r\n
+      \   td strong\r\n    {\r\n        font-size: 16px;\r\n        font-weight: bold;\r\n
+      \   }\r\n\r\n    @media screen and (max-width: 641px)\r\n    {\r\n        body\r\n
+      \       {\r\n            background: #fff;\r\n            overflow: auto;\r\n
+      \       }\r\n        #cacpageoverlay\r\n        {\r\n            height: 100%;\r\n
+      \           margin: 0;\r\n            min-width: 0;\r\n            font-size:
+      13px;\r\n            padding: 2% 4%;\r\n            position: static;\r\n            width:
+      92%;\r\n        }\r\n        #cacpageoverlay h3\r\n        {\r\n            font-size:
+      18px;\r\n            margin-left: 25px;\r\n        }\r\n        #darkscreen,
+      #msnstaticpage\r\n        {\r\n            display: none;\r\n        }\r\n    }\r\n
+      \   @media screen and (orientation: landscape) and (max-height: 641px)\r\n    {\r\n
+      \       body\r\n        {\r\n            background: #fff;\r\n            overflow:
+      auto;\r\n        }\r\n        #cacpageoverlay\r\n        {\r\n            height:
+      100%;\r\n            margin: 0;\r\n            min-width: 0;\r\n            font-size:
+      13px;\r\n            padding: 2% 4%;\r\n            position: static;\r\n            width:
+      92%;\r\n        }\r\n        #cacpageoverlay h3\r\n        {\r\n            font-size:
+      18px;\r\n            margin-left: 25px;\r\n        }\r\n        #darkscreen,
+      #msnstaticpage\r\n        {\r\n            display: none;\r\n        }\r\n    }\r\n
+      \   </style>\r\n</head>\r\n<body>\r\n    <img id=\"msnstaticpage\" title=\"Homepagina
+      MSN Nederland\" src=\"//img-s-msn-com.akamaized.net/tenant/amp/entityid/BBvEQ3h.img\"
+      />\n<div id=\"darkscreen\" onclick=\"acceptAction()\"></div>\n         <div
+      id=\"cacpageoverlay\" data-cac-value=\"nl-nl|v1\">\r\n            <img class=\"msnlogo\"
+      src=\"//img-s-msn-com.akamaized.net/tenant/amp/entityid/BBvF85g.img\" />\r\n
+      \           <h3>Cookies op MSN</h3>\r\n            <p>\r\n                Op
+      MSN.com/nl-nl gebruiken wij (Microsoft) functionele en analytische cookies en
+      vergelijkbare technologie&#235;n (alle aangeduid als cookies) om u een optimale
+      gebruikerservaring te bieden. Bovendien gebruiken wij en andere (derde) partijen
+      tracking cookies om internetgedrag te volgen en daardoor een gepersonaliseerde
+      ervaring te bieden en gepersonaliseerde advertenties te tonen. U gaat akkoord
+      met dit cookiegebruik door hieronder op “akkoord” te klikken of door verder
+      gebruik te blijven maken van MSN.com/nl-nl. Mocht u meer informatie wensen,
+      klik dan op\r\n                <a href=\"javascript:void(0)\" class=\"learnmore\"
+      \ onclick=\"renderCookieWallStatement()\">Meer informatie</a>\r\n            </p>\r\n
+      \               <button class=\"accept\"  onclick=\"acceptAction()\">AKKOORD</button>\r\n\r\n
+      \       </div>\r\n        <div id=\"cacpagestatement\">\r\n                <img
+      class=\"msnlogo\" src=\"//img-s-msn-com.akamaized.net/tenant/amp/entityid/BBvF85g.img\"
+      title=\"MSN-logo\" />\r\n    <h1 id=\"cookiewalldocumentheader\">Microsoft MSN/nl-nl
+      Cookie Statement</h1>\r\n    <div class=\"statementprefix\">\r\n        Bij
+      de levering van onze diensten via MSN.com/nl-nl, gebruiken we - Microsoft -
+      cookies en vergelijkbare technologieën (gemakshalve gezamenlijk aangeduid als
+      cookies). Wij gebruiken functionele en analytische cookies om u een optimale
+      gebruikerservaring te bieden. Bovendien gebruiken wij en andere (derde) partijen
+      tracking cookies om u een gepersonaliseerde ervaring te bieden, om u gepersonaliseerde
+      advertenties te tonen en om uw internetgedrag te volgen. U gaat akkoord met
+      dit cookiegebruik door hieronder  op “akkoord” te klikken of door verder gebruik
+      te blijven maken van MSN.com/nl-nl.\r\n    </div>\r\n    <button class=\"accept\"
+      \ onclick=\"acceptAction()\">AKKOORD</button>\r\n    <div>\r\n        <p>Zowel
+      Microsoft als derde partijen (zijnde adverteerders en door adverteerders ingeschakelde
+      partijen) kunnen gebruik maken van cookies en soortgelijke technologie&euml;n
+      (gemakshalve gezamenlijk aangeduid als &ldquo;cookies&rdquo;) op MSN.com/nl-nl..
+      Cookies worden gebruikt om gegevens te verzamelen voor verschillende doeleinden
+      die verband houden met het verlenen van onze services, met inbegrip van maar
+      niet beperkt tot:</p>     <ul>         <li>             <strong>Het opslaan
+      van uw voorkeuren en instellingen. </strong>Instellingen waarmee onze services
+      correct kunnen werken, of waarmee uw voorkeuren na verloop van tijd kunnen worden
+      behouden, kunnen op uw apparaat worden opgeslagen. Als u bijvoorbeeld uw stad
+      of postcode invoert om lokaal nieuws of informatie over het weer op een Microsoft-site
+      te verkrijgen, kunnen we die gegevens in een cookie opslaan, zodat u de relevante
+      lokale informatie ziet wanneer u weer naar de website terugkeert. Als u geen
+      op interesses gebaseerde advertenties wilt ontvangen, slaan we uw afmeldvoorkeuren
+      op in een cookie op uw apparaat.         </li>         <li>             <strong>Aanmelden
+      en authenticatie. </strong>Wanneer u zich bij een website aanmeldt met behulp
+      van uw persoonlijke             <a target=_blank href=\"https://privacy.microsoft.com/privacystatement/#mainmicrosoftaccountmodule\"><u>Microsoft-account</u></a>,
+      slaan we een uniek id-nummer, en de tijd waarop u zich aanmeldt, op in een versleutelde
+      cookie op uw apparaat. Door het gebruik van dit cookie kunt u binnen de website
+      van pagina naar pagina gaan, zonder dat u zich op elke pagina opnieuw hoeft
+      aan te melden.         </li>         <li>             <strong>Op interesse gebaseerde
+      advertenties. </strong>Microsoft maakt gebruik van cookies om gegevens te verzamelen
+      over uw onlineactiviteiten en om uw interesses te identiﬁceren, zodat we advertenties
+      kunnen aanbieden die het meest relevant voor u zijn. U kunt zich afmelden voor
+      het ontvangen van op interesses gebaseerde advertenties van Microsoft, zoals
+      beschreven in het gedeelte             <a target=_blank href=\"https://privacy.microsoft.com/privacystatement/#mainhowtoaccesscontrolyourdatamodule\"><u>Toegang
+      en beheer </u></a>in onze privacyverklaring.         </li>         <li>             <strong>Analyse.
+      </strong>Om onze services te bieden, maken we gebruik van cookies en andere
+      aanduidingen om gebruiks- en prestatiegegevens te verzamelen. Zo maken wij gebruik
+      van cookies om het aantal unieke bezoekers van een webpagina of service te tellen
+      en andere statistieken over de activiteiten van onze services te ontwikkelen.
+      \        </li>     </ul>     <p>&nbsp;</p>     <p>Derde partijen, waaronder
+      adverteerders en door adverteerders ingeschakelde partijen kunnen bij het tonen
+      van advertenties via onze websites eveneens cookies gebruiken. Voor de cookies
+      die derde partijen plaatsen en de mogelijke gegevens die zij daarbij verzamelen,
+      verwijzen wij naar de verklaringen die deze partijen op hun eigen websites daarover
+      geven, zie de links hieronder. Let op dat deze verklaringen regelmatig kunnen
+      wijzigen. Microsoft heeft daar geen invloed op en Microsoft heeft er geen kennis
+      van wanneer er wijzigen aan deze verklaringen worden aangebracht.</p>     <p>&nbsp;</p>
+      \    <p>In het navolgende leest u meer over de cookies die gebruikt worden wanneer
+      u MSN.com/nl-nl bezoekt, onderverdeeld in de volgende categorie&euml;n:</p>
+      \    <p>&nbsp;</p>     <ul>         <li>             <strong><strong>Cookies
+      die ervoor zorgen dat de website naar behoren functioneert</strong></strong>
+      \        </li>     </ul>     <ul>         <li>             <strong>Cookies om
+      gebruik van de website te kunnen meten</strong>         </li>     </ul>     <ul>
+      \        <li>             <strong>Cookies om de inhoud van onze website te delen
+      via social media</strong>         </li>     </ul>     <ul>         <li>             <strong>Cookies
+      om advertenties te kunnen tonen</strong>         </li>     </ul>     <ul>         <li>
+      \            <strong>Cookies om gedragsafhankelijke inhoud te kunnen tonen</strong>
+      \        </li>     </ul>     <ul>         <li>             <strong>Overige /
+      onvoorziene cookies</strong>         </li>     </ul>     <p>&nbsp;</p>     <p>&nbsp;</p>
+      \    <p>De hierna volgende informatie is op 16 augustus 2016 voor het eerst
+      gepubliceerd. Het kan zijn dat onderstaand overzicht, ondanks onze inspanningen,
+      nog niet 100% volledig is. Aan de completering hiervan wordt permanent gewerkt.
+      Mocht u een cookie tegenkomen die niet op deze lijst staat, dan kunt u dit aan
+      ons melden via cookiefeedback@microsoft.com.</p>     <p>&nbsp;</p>     <p>         <strong><em>Ad
+      1 - </em></strong>         <strong>Cookies die ervoor zorgen dat de website
+      naar behoren functioneert</strong>     </p>     <p>&nbsp;</p>     <p>Deze cookies
+      worden gebruikt voor:</p>     <ol>         <li>Het onthouden van producten die
+      je aan je boodschappenmandje toevoegt tijdens het online winkelen</li>         <li>Het
+      onthouden van informatie die je invult op de verschillende webpagina&rsquo;s
+      tijdens het afrekenen of bestellen, zodat je niet steeds al je gegevens opnieuw
+      hoeft in te vullen</li>         <li>Het doorgeven van informatie van de ene
+      webpagina aan de volgende webpagina, bijvoorbeeld als er een lange enqu&ecirc;te
+      wordt ingevuld of als je veel gegevens moet invullen bij een online bestelling</li>
+      \        <li>Het opslaan van voorkeuren, zoals de taal, locatie, het gewenste
+      aantal te tonen zoekresultaten, etc.</li>         <li>Het opslaan van instellingen
+      voor een optimale videoweergave, zoals de gewenste buffergrootte en de resolutiegegevens
+      van je scherm</li>         <li>Het uitlezen van je browserinstellingen om onze
+      website optimaal op je beeldscherm te kunnen weergeven</li>         <li>Het
+      opsporen van misbruik van onze website en diensten, door bijvoorbeeld een aantal
+      opeenvolgende mislukte inlogpogingen te registreren</li>         <li>Het gelijkmatig
+      belasten van de website, waardoor de site bereikbaar blijft</li>         <li>Het
+      aanbieden van de mogelijkheid om inloggegevens op te slaan zodat je die niet
+      elke keer opnieuw hoeft in te voeren</li>         <li>Het mogelijk maken om
+      te reageren op onze website door middel van commentaarschermen en andere vergelijkbare
+      mechanismen.</li>     </ol>     <p>&nbsp;</p>     <p>Zie hieronder een lijst
+      met de cookies die wij gebruiken, de doeleinden waarvoor de cookies worden gebruikt
+      en hoe lang ze worden gebruikt.</p>     <p>&nbsp;</p>     <table width=\"933\">
+      \        <thead>             <tr>                 <td width=\"353\">                     <p>
+      \                        <strong>Naam</strong>                     </p>                 </td>
+      \                <td width=\"257\">                     <p>                         <strong>Geplaatst
+      door</strong>                     </p>                 </td>                 <td
+      width=\"198\">                     <p>                         <strong>Waarvoor</strong>
+      \                    </p>                 </td>                 <td width=\"125\">
+      \                    <p>                         <strong>Hoe lang</strong>                     </p>
+      \                </td>             </tr>         </thead>         <tbody>             <tr>
+      \                <td width=\"354\">                     <p>MUID</p>                 </td>
+      \                <td width=\"255\">                     <p>.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>2 jaren</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>ANON</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Tot
+      einde sessie</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>PreferencesMsn</p>                 </td>
+      \                <td width=\"255\">                     <p>.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>1 jaar</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>Sample</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>8</p>
+      \                </td>                 <td width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>_EDGE_S</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4&nbsp;</p>                 </td>                 <td
+      width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>EDGE_F</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4&nbsp;</p>
+      \                </td>                 <td width=\"128\">                     <p>Tot
+      einde sessie</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>_SS</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>3, 7</p>                 </td>                 <td
+      width=\"128\">                     <p>1 jaar</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>MSPAuth</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>9</p>
+      \                </td>                 <td width=\"128\">                     <p>Tot
+      einde sessie</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>MSPProf</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>9</p>                 </td>                 <td
+      width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>HMDSMS2954</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>1
+      dag</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>MSNRPSShare</p>                 </td>
+      \                <td width=\"255\">                     <p>.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>9</p>                 </td>
+      \                <td width=\"128\">                     <p>Tot einde sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>MSNRPSAuth</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>9&nbsp;</p>                 </td>                 <td
+      width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>MSNRPSSecAuth</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>9</p>
+      \                </td>                 <td width=\"128\">                     <p>Tot
+      einde sessie</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>NAP</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>9</p>                 </td>                 <td
+      width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>WLMMAC</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>7&nbsp;</p>
+      \                </td>                 <td width=\"128\">                     <p>Tot
+      einde sessie</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>Ipt</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>180 dagen</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>marketPref</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>RecentStocks</p>                 </td>
+      \                <td width=\"255\">                     <p>                         <a
+      target=_blank href=\"http://www.msn.com/\">www.msn.com</a>                     </p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>3
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>poll*</p>                 </td>                 <td
+      width=\"255\">                     <p>&nbsp;.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>3</p>                 </td>
+      \                <td width=\"128\">                     <p>2 weken</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>timeZoneOffsetInMins</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>4</p>                 </td>                 <td width=\"128\">
+      \                    <p>1 jaar</p>                 </td>             </tr>             <tr>
+      \                <td width=\"354\">                     <p>banner:cookieprivacy</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>4</p>                 </td>                 <td width=\"128\">
+      \                    <p>180 dagen</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>banner:cookieprivacy:count</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>4</p>                 </td>                 <td width=\"128\">
+      \                    <p>180 dagen</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>banner:cookieprivacy:lastseen</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>4</p>                 </td>                 <td width=\"128\">
+      \                    <p>180 dagen</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>weaRecentLocations</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>4</p>                 </td>                 <td width=\"128\">
+      \                    <p>1 jaar</p>                 </td>             </tr>             <tr>
+      \                <td width=\"354\">                     <p>DefaultLocation</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>4</p>                 </td>                 <td width=\"128\">
+      \                    <p>2 jaar</p>                 </td>             </tr>             <tr>
+      \                <td width=\"354\">                     <p>trg</p>                 </td>
+      \                <td width=\"255\">                     <p>                         <a
+      target=_blank href=\"http://www.msn.com/\">www.msn.com</a>                     </p>
+      \                </td>                 <td width=\"198\">                     <p>5</p>
+      \                </td>                 <td width=\"128\">                     <p>10
+      minuten</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>videoCookiesLastCategory</p>                 </td>
+      \                <td width=\"255\">                     <p>                         <a
+      target=_blank href=\"http://www.msn.com/\">www.msn.com</a>                     </p>
+      \                </td>                 <td width=\"198\">                     <p>5</p>
+      \                </td>                 <td width=\"128\">                     <p>10
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>vidvol</p>                 </td>                 <td
+      width=\"255\">                     <p>                         <a target=_blank
+      href=\"http://www.msn.com/\">www.msn.com</a>                     </p>                 </td>
+      \                <td width=\"198\">                     <p>5</p>                 </td>
+      \                <td width=\"128\">                     <p>Tot einde sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>vidmut</p>                 </td>                 <td
+      width=\"255\">                     <p>                         <a target=_blank
+      href=\"http://www.msn.com/\">www.msn.com</a>                     </p>                 </td>
+      \                <td width=\"198\">                     <p>5</p>                 </td>
+      \                <td width=\"128\">                     <p>Tot einde sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>vidmbr</p>                 </td>                 <td
+      width=\"255\">                     <p>                         <a target=_blank
+      href=\"http://www.msn.com/\">www.msn.com</a>                     </p>                 </td>
+      \                <td width=\"198\">                     <p>5</p>                 </td>
+      \                <td width=\"128\">                     <p>7 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>SRCHD</p>
+      \                </td>                 <td width=\"255\">                     <p>.bing.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4&nbsp;</p>
+      \                </td>                 <td width=\"128\">                     <p>2
+      jaren</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>_EDGE_S</p>                 </td>                 <td
+      width=\"255\">                     <p>.bing.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>SRCHUID</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.bing.com/\">www.bing.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>7</p>                 </td>                 <td width=\"128\">
+      \                    <p>2 jaren</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>GED_PLAYLIST_ACTIVITY</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>4</p>                 </td>                 <td width=\"128\">
+      \                    <p>Tot einde sessie</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>Dpio</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>5</p>
+      \                </td>                 <td width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>CAC</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>6 maanden</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>HMDSDT</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>6
+      maanden</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>fccfrmc</p>                 </td>                 <td
+      width=\"255\">                     <p>                         <a target=_blank
+      href=\"http://www.msn.com/\">www.msn.com</a>                     </p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>1 jaar</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>fcctoc</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>4</p>                 </td>                 <td width=\"128\">
+      \                    <p>1 jaar</p>                 </td>             </tr>             <tr>
+      \                <td width=\"354\">                     <p>fccfrmv</p>                 </td>
+      \                <td width=\"255\">                     <p>                         <a
+      target=_blank href=\"http://www.msn.com/\">www.msn.com</a>                     </p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>Msot</p>                 </td>                 <td
+      width=\"255\">                     <p>                         <a target=_blank
+      href=\"http://www.msn.com/\">www.msn.com</a>                     </p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>1 jaar</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>MR</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>6
+      maanden</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>ANONCHK</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>24 uren</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>SM</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>deferLoadedItems</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>8</p>                 </td>
+      \                <td width=\"128\">                     <p>Nvt</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>startpage|meStripe|meStripe|meStripe.office|meOffice</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>8</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>startpage|meStripe|meStripe|meStripe.onenote|meOneNote</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>8</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>videoerrorcount</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>5</p>                 </td>
+      \                <td width=\"128\">                     <p>sessie</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>*_MSN_FBLIKE</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>2
+      weken</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>videoerrorcount</p>                 </td>
+      \                <td width=\"255\">                     <p>                         <a
+      target=_blank href=\"http://www.msn.com/\">www.msn.com</a>                     </p>
+      \                </td>                 <td width=\"198\">                     <p>5</p>
+      \                </td>                 <td width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>likePromptDisabled</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>Eso</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>Skypefre</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>365 dagen</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>PriFedAuth</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>2
+      uren</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>Ssrecirc</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>sessie</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>oneprotection</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>windefenderfre</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>365 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>Lastseenheadlines</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>vidccpref</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>1 jaar</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>stripeSettingsCookie</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>365
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>banner:privacyUpdating:count</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>banner:privacyUpdating:lastseen</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>banner:privacyUpdating</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>banner:privacyUpdated:count</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>banner:privacyUpdated:lastseen</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>banner:privacyUpdated</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>deferLoadedItems</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>8</p>                 </td>
+      \                <td width=\"128\">                     <p>Nvt</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>startpage|meStripe|meStripe|meStripe.office|meOffice</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>8</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>startpage|meStripe|meStripe|meStripe.onenote|meOneNote</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>8</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>Msameid</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>9</p>                 </td>                 <td
+      width=\"128\">                     <p>Nvt</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>DNT</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>UMH2E</p>                 </td>                 <td
+      width=\"255\">                     <p>                         <a target=_blank
+      href=\"http://www.msn.com/\">www.msn.com</a>                     </p>                 </td>
+      \                <td width=\"198\">                     <p>8</p>                 </td>
+      \                <td width=\"128\">                     <p>2 jaren</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>MUID</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>2
+      jaren</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>PreferencesMsn</p>                 </td>
+      \                <td width=\"255\">                     <p>.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>1 jaar</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>Sample</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>8</p>
+      \                </td>                 <td width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>_SS</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>3, 7</p>                 </td>                 <td
+      width=\"128\">                     <p>1 jaar</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>ipt</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>marketPref</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>1 jaar</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>i18next</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>X-Mapping-*</p>                 </td>
+      \                <td width=\"255\">                     <p>carhire.msn.com/</p>
+      \                </td>                 <td width=\"198\">                     <p>8</p>
+      \                </td>                 <td width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>disclaimer-agree</p>                 </td>
+      \                <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>i18next</p>                 </td>                 <td
+      width=\"255\">                     <p>carhire.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>sessie</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>X-Mapping-*</p>
+      \                </td>                 <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>8</p>
+      \                </td>                 <td width=\"128\">                     <p>20
+      minuten</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>disclaimer-agree</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>i18next</p>                 </td>                 <td
+      width=\"255\">                     <p>flights.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>sessie</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>saved.search</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>culture.currency</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>culture.homecity</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>filterSelections</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>flights.sortObj</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>prev.saved.search</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>saved.search</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>skyscanner.home.city.cached.by.ip</p>
+      \                </td>                 <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>flights.saved.favorites.&lt;locale&gt;.&lt;currency&gt;.&lt;origin&gt;</p>
+      \                </td>                 <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>wl-storage-version</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>culture.currency</p>                 </td>
+      \                <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>culture.homecity</p>                 </td>
+      \                <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>skyscanner.home.city.cached.by.ip</p>
+      \                </td>                 <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>wl-storage-version</p>                 </td>
+      \                <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>carhire.search.state</p>                 </td>
+      \                <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>carhire.prev.saved.search</p>                 </td>
+      \                <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>carhire.saved.favorites&lt;locale&gt;.&lt;currency&gt;.&lt;location&gt;</p>
+      \                </td>                 <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>         </tbody>     </table>     <p>&nbsp;</p>
+      \    <p>Let op, bepaalde cookies zijn 'dynamische cookies'. Dit betekent dat
+      je verschillende namen van cookies kunt vinden die behoren tot dezelfde 'cookie
+      familie'. Een nummer in de naam van de cookie is bijvoorbeeld verschillend.
+      Deze cookies hebben dezelfde doeleinden en dezelfde bewaartermijn als de cookie
+      van dezelfde 'cookie familie' welke in de lijst hierboven is vermeld.</p>     <p>&nbsp;</p>
+      \    <p>         <strong><em>Ad 2 - </em></strong>         <strong>Cookies om
+      gebruik van de website te kunnen meten</strong>     </p>     <p>Wij gebruiken
+      cookie om te bepalen hoeveel bezoekers er op onze website komen en wat het meest
+      bekeken wordt. Dit vertelt ons welke onderdelen van de website het meest interessant
+      zijn voor onze bezoekers.. Van de informatie die wij zo verzamelen worden statistieken
+      gemaakt. Deze statistieken geven ons inzicht in hoe vaak onze webpagina bezocht
+      wordt, waar precies bezoekers de meeste tijd doorbrengen, enzovoort. Hierdoor
+      zijn wij in staat structuur, navigatie en inhoud van de website zo gebruiksvriendelijk
+      mogelijk voor je te maken. De statistieken en overige rapportages herleiden
+      wij niet naar personen.</p>     <p>&nbsp;</p>     <p>Deze cookies worden gebruikt
+      voor:</p>     <ol>         <li>Het bijhouden van het aantal bezoekers op onze
+      webpagina&rsquo;s</li>         <li>Het bijhouden van de tijdsduur die elke bezoeker
+      doorbrengt op onze webpagina&rsquo;s</li>         <li>Het bepalen van de volgorde
+      waarin een bezoeker de verschillende pagina&rsquo;s van onze website bezoekt</li>
+      \        <li>Het beoordelen welke delen van onze site aanpassing behoeven</li>
+      \        <li>Het optimaliseren van de website</li>     </ol>     <p>&nbsp;</p>
+      \    <p>Zie hieronder een lijst met cookies die wij gebruiken om statistieken
+      te verzamelen, de doeleinden waarvoor de cookies worden gebruikt en hoe lang
+      ze worden gebruikt.</p>     <p>&nbsp;</p>     <table width=\"933\">         <thead>
+      \            <tr>                 <td width=\"353\">                     <p>
+      \                        <strong>Naam</strong>                     </p>                 </td>
+      \                <td width=\"257\">                     <p>                         <strong>Geplaatst
+      door</strong>                     </p>                 </td>                 <td
+      width=\"198\">                     <p>                         <strong>Waarvoor</strong>
+      \                    </p>                 </td>                 <td width=\"125\">
+      \                    <p>                         <strong>Hoe lang</strong>                     </p>
+      \                </td>             </tr>         </thead>         <tbody>             <tr>
+      \                <td width=\"362\">                     <br />                     <p>MUID</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>2
+      jaren</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_EDGE_S</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>EDGE_F</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>Tot
+      einde sessie</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_EDGE_V</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>2 jaren</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>MSFPC</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5&nbsp;</p>                 </td>                 <td width=\"128\">
+      \                    <p>2 jaren</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>&nbsp;_cb</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>1, 2, 3, 4, 5</p>                 </td>                 <td
+      width=\"128\">                     <p>13 maanden</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>_cb_ls</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>1, 2, 3, 4, 5</p>                 </td>                 <td
+      width=\"128\">                     <p>13 maanden</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>&nbsp;_chartbeat2</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>1, 2, 3, 4, 5</p>                 </td>                 <td
+      width=\"128\">                     <p>13 maanden</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>chartbeat4</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>1, 2, 3, 4, 5</p>                 </td>                 <td
+      width=\"128\">                     <p>1 minuut</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>_chartbeat5</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>1, 2, 3, 4, 5</p>                 </td>                 <td
+      width=\"128\">                     <p>1 minuut</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>_SUPERFLY_nosample</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>2</p>                 </td>                 <td width=\"128\">
+      \                    <p>1 hour</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>MUID</p>                 </td>
+      \                <td width=\"255\">                     <p>.bing.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>2 jaren</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>SRCHUSR</p>
+      \                </td>                 <td width=\"255\">                     <p>.bing.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td width=\"128\">                     <p>2
+      jaren</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_EDGE_S</p>                 </td>                 <td
+      width=\"255\">                     <p>.bing.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>MUIDB</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.bing.com/\">www.bing.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>4</p>                 </td>                 <td width=\"128\">
+      \                    <p>2 jaren</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>RC</p>
+      \                </td>                 <td width=\"255\">                     <p>
+      \                        <a target=_blank href=\"http://www.msn.com/\">www.msn.com</a>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>2</p>                 </td>                 <td width=\"128\">
+      \                    <p>1 jaar</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>MR</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td width=\"128\">                     <p>6 maanden</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>ANONCHK</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>4</p>
+      \                </td>                 <td width=\"128\">                     <p>24
+      uren</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>SM</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>4</p>                 </td>                 <td
+      width=\"128\">                     <p>sessie</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>ocid</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>3</p>
+      \                </td>                 <td width=\"128\">                     <p>Tot
+      einde sessie</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_cb</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3, 4, 5</p>                 </td>
+      \                <td width=\"128\">                     <p>Nvt</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>_cb_expires</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_chartbeat*</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_chartbeat*_expires</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_SUPERFLY_lockout</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td width=\"128\">                     <p>10
+      minuten</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_SUPERFLY_lockout_expires</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td width=\"128\">                     <p>10
+      minuten</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>Grvinsights</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td width=\"128\">                     <p>18
+      maanden</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>Cobrand</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>3</p>                 </td>                 <td
+      width=\"128\">                     <p>18 maanden</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>__utma</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td width=\"128\">                     <p>2
+      jaren</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>xtvrn</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3, 4, 5</p>                 </td>
+      \                <td width=\"128\">                     <p>13 maanden</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>_SS</p>
+      \                </td>                 <td width=\"255\">                     <p>.bing.com</p>
+      \                </td>                 <td width=\"198\">                     <p>2</p>
+      \                </td>                 <td width=\"128\">                     <p>Tot
+      einde sessie</p>                 </td>             </tr>             <tr>                 <td
+      width=\"356\">                     <p>ADRUM</p>                 </td>                 <td
+      width=\"255\">                     <p>.msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3, 4, 5</p>                 </td>
+      \                <td width=\"128\">                     <p>sessie</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"356\">                     <p>_ga</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td width=\"128\">                     <p>2
+      jaren</p>                 </td>             </tr>             <tr>                 <td
+      width=\"356\">                     <p>_ga</p>                 </td>                 <td
+      width=\"255\">                     <p>carhire.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td width=\"128\">                     <p>2
+      jaren</p>                 </td>             </tr>             <tr>                 <td
+      width=\"356\">                     <p>_gat_Skyscanner</p>                 </td>
+      \                <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>5</p>
+      \                </td>                 <td width=\"128\">                     <p>10
+      minuten</p>                 </td>             </tr>             <tr>                 <td
+      width=\"356\">                     <p>_gat_Skyscanner</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>5</p>
+      \                </td>                 <td width=\"128\">                     <p>10
+      minuten</p>                 </td>             </tr>             <tr>                 <td
+      width=\"356\">                     <p>_ga</p>                 </td>                 <td
+      width=\"255\">                     <p>flights.msn.com/</p>                     <p>Skyscanner</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td width=\"128\">                     <p>2
+      jaren</p>                 </td>             </tr>             <tr>                 <td
+      width=\"356\">                     <p>ADRUM_CLIENTINFO</p>                 </td>
+      \                <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"356\">                     <p>ADRUM_CLIENTINFO</p>                 </td>
+      \                <td width=\"255\">                     <p>carhire.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>         </tbody>     </table>     <p>&nbsp;</p>
+      \    <p>Let op, bepaalde cookies zijn 'dynamische cookies'. Dit betekent dat
+      je verschillende namen van cookies kunt vinden die behoren tot dezelfde 'cookie
+      familie'. Een nummer in de naam van de cookie is bijvoorbeeld verschillend.
+      Deze cookies hebben dezelfde doeleinden en dezelfde bewaartermijn als de cookie
+      van dezelfde 'cookie familie' welke in de lijst hierboven is vermeld.</p>     <p>&nbsp;</p>
+      \    <p>Voor de cookies die derde partijen plaatsen en de mogelijke data die
+      zij hiermee verzamelen, verwijzen wij naar de verklaringen die deze partijen
+      op hun eigen websites daarover geven; zie de links hieronder. Let op dat deze
+      verklaringen regelmatig kunnen wijzigen. We hebben daar geen invloed op.</p>
+      \    <ul>         <li>             <a target=_blank href=\"https://www.google.nl/intl/en/policies/\">Google</a>
+      \        </li>     </ul>     <p>&nbsp;</p>     <p>         <strong><em>Ad 3
+      - </em></strong>         <strong>Cookies om de inhoud van onze website te delen
+      via social media</strong>     </p>     <p>De artikelen en video&rsquo;s die
+      u op onze websites bekijkt, kunt u door middel van buttons delen via social
+      media. Voor het functioneren van deze buttons wordt gebruik gemaakt van cookies
+      van de social media partijen, zodat deze u herkennen op het moment dat u een
+      artikel of video wilt delen. Deze cookies maken het dus mogelijk dat ingelogde
+      gebruikers van geselecteerde social media bepaalde inhoud van onze website direct
+      kunnen delen (hieronder ge&iuml;dentificeerde doeleinden).</p>     <p>&nbsp;</p>
+      \    <p>Zie hieronder een lijst met de cookies die wij gebruiken, de doeleinden
+      waarvoor de cookies worden gebruikt en hoe lang ze worden gebruikt.</p>     <p>&nbsp;</p>
+      \    <table width=\"933\">         <thead>             <tr>                 <td
+      width=\"353\">                     <p>                         <strong>Naam</strong>
+      \                    </p>                 </td>                 <td width=\"257\">
+      \                    <p>                         <strong>Geplaatst door</strong>
+      \                    </p>                 </td>                 <td width=\"198\">
+      \                    <p>                         <strong>Waarvoor</strong>                     </p>
+      \                </td>                 <td width=\"125\">                     <p>
+      \                        <strong>Hoe lang</strong>                     </p>
+      \                </td>             </tr>         </thead>         <tbody>             <tr>
+      \                <td width=\"354\">                     <p>fbm_{id}</p>                 </td>
+      \                <td width=\"255\">                     <p>.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1</p>                 </td>
+      \                <td width=\"128\">                     <p>1 minuut</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>fbsr_{id}</p>
+      \                </td>                 <td width=\"255\">                     <p>.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1&nbsp;</p>
+      \                </td>                 <td width=\"128\">                     <p>90
+      minuten</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>TwitterSignedIn</p>                 </td>
+      \                <td width=\"255\">                     <p>                         <a
+      target=_blank href=\"http://www.msn.com/\">www.msn.com</a>                     </p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td width=\"128\">                     <p>90
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>TwitterUserToken</p>                 </td>
+      \                <td width=\"255\">                     <p>                         <a
+      target=_blank href=\"http://www.msn.com/\">www.msn.com</a>                     </p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td width=\"128\">                     <p>90
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>shareCount</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1</p>                 </td>                 <td
+      width=\"128\">                     <p>180 dagen</p>                 </td>             </tr>
+      \            <tr>                 <td width=\"354\">                     <p>startpageMeStripeClickCount</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td width=\"128\">                     <p>6
+      maanden</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>promptDisplayCount</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1</p>                 </td>
+      \                <td width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>startpageEngagedUsersPageVisitCount</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>datr</p>                 </td>                 <td
+      width=\"255\">                     <p>.facebook.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1</p>                 </td>
+      \                <td width=\"128\">                     <p>2 jaren</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>fr</p>
+      \                </td>                 <td width=\"255\">                     <p>.facebook.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td width=\"128\">                     <p>3
+      maanden</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>guest_id</p>                 </td>                 <td
+      width=\"255\">                     <p>.twitter.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1</p>                 </td>
+      \                <td width=\"128\">                     <p>2 jaren</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>pid</p>
+      \                </td>                 <td width=\"255\">                     <p>.twitter.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td width=\"128\">                     <p>18
+      maanden</p>                 </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>_at.cww</p>                 </td>                 <td
+      width=\"255\">                     <p>flights.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1</p>                 </td>
+      \                <td width=\"128\">                     <p>Nvt</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>_at.hist.&lt;MMDD&gt;</p>
+      \                </td>                 <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      width=\"354\">                     <p>at-rand</p>                 </td>                 <td
+      width=\"255\">                     <p>flights.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1</p>                 </td>
+      \                <td width=\"128\">                     <p>Nvt</p>                 </td>
+      \            </tr>             <tr>                 <td width=\"354\">                     <p>at-lojson-cache-ra-*</p>
+      \                </td>                 <td width=\"255\">                     <p>flights.msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>         </tbody>     </table>     <p>&nbsp;</p>
+      \    <p>Let op, bepaalde cookies zijn 'dynamische cookies'. Dit betekent dat
+      je verschillende namen van cookies kunt vinden die behoren tot dezelfde 'cookie
+      familie'. Een nummer in de naam van de cookie is bijvoorbeeld verschillend.
+      Deze cookies hebben dezelfde doeleinden en dezelfde bewaartermijn als de cookie
+      van dezelfde 'cookie familie' welke in de lijst hierboven is vermeld.</p>     <p>&nbsp;</p>
+      \    <p>Voor de cookies die de social media partijen plaatsen en de mogelijke
+      data die zij hiermee verzamelen, verwijzen wij naar de verklaringen die deze
+      partijen op hun eigen websites daarover geven; zie de links hieronder. Let op
+      dat deze verklaringen regelmatig kunnen wijzigen. Microsoft heeft daar geen
+      invloed op.</p>     <ul>         <li>             <a target=_blank  href=\"https://nl-nl.facebook.com/about/privacy\">Facebook</a>
+      \        </li>         <li>             <a target=_blank href=\"http://www.google.com/intl/nl/policies/privacy/\">Google+</a>
+      \        </li>         <li>             <a target=_blank  href=\"http://twitter.com/privacy\">Twitter</a>
+      \        </li>         <li>             <a target=_blank href=\"http://www.google.nl/intl/nl/policies/privacy/\">YouTube</a>
+      \        </li>     </ul>     <p>&nbsp;</p>     <p>         <strong><em>Ad 4
+      - </em></strong>         <strong>Cookies om advertenties te kunnen tonen</strong>
+      \    </p>     <p>MSN.com/nl-nl laat je advertenties zien. Deze cookies zijn
+      een noodzakelijke bron van inkomsten om onze website te kunnen financieren.
+      Sommige advertenties (of videoboodschappen) maken gebruik van cookies. Deze
+      advertenties worden door ons en derde partijen op onze website geplaatst.</p>
+      \    <p>&nbsp;</p>     <p>Door het gebruik van cookies kunnen we bijhouden:</p>
+      \    <ol>         <li>welke advertenties je al hebt gezien om zo te voorkomen
+      dat je steeds dezelfde te zien krijgt</li>         <li>hoeveel bezoekers op
+      de advertentie klikken ten behoeve van afrekening met de adverteerder</li>         <li>hoeveel
+      bestellingen er plaatsvinden via de advertentie ten behoeve van afrekening met
+      de adverteerder</li>     </ol>     <p>&nbsp;</p>     <p>Als dergelijke cookies
+      niet worden gebruikt zult u overigens nog steeds advertenties te zien krijgen.
+      Er worden immers ook advertenties getoond die g&eacute;&eacute;n gebruik maken
+      van cookies. Deze advertenties kunnen bijvoorbeeld aangepast zijn aan de inhoud
+      van de website. U kunt dit soort inhoudsafhankelijke internetadvertenties vergelijken
+      met reclame op televisie. Als u bijvoorbeeld een tv-programma over koken kijkt,
+      zult u vaak in de bijbehorende reclameblokken een advertentie over kookproducten
+      zien.</p>     <p>&nbsp;</p>     <p>Zie hieronder een lijst met de cookies die
+      mediabureaus, advertentienetwerken en/of wij gebruiken in combinatie met advertenties,
+      voor welke doeleinden deze cookies worden gebruikt en hoe lang ze worden gebruikt.
+      Advertentienetwerken en mediabureaus zijn bedrijven die fungeren als tussenpersoon
+      tussen website-eigenaren en adverteerders.</p>     <p>&nbsp;</p>     <table
+      width=\"933\">         <thead>             <tr>                 <td width=\"353\">
+      \                    <p>                         <strong>Naam</strong>                     </p>
+      \                </td>                 <td  width=\"257\">                     <p>
+      \                        <strong>Geplaatst door</strong>                     </p>
+      \                </td>                 <td width=\"198\">                     <p>
+      \                        <strong>Waarvoor</strong>                     </p>
+      \                </td>                 <td width=\"125\">                     <p>
+      \                        <strong>Hoe lang</strong>                     </p>
+      \                </td>             </tr>         </thead>         <tbody>             <tr>
+      \                <td  width=\"362\">                     <p>t_gid</p>                 </td>
+      \                <td width=\"255\">                     <p>.taboola.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>1 jaar</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>taboola_usg</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>1 jaar</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>JSESSIONID</p>
+      \                </td>                 <td width=\"255\">                     <p>trc.taboola.com</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>akaas_TRC-origins</p>
+      \                </td>                 <td width=\"255\">                     <p>trc.taboola.com</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>taboola_navrii</p>
+      \                </td>                 <td width=\"255\">                     <p>trc.taboola.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>1 jaar</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>taboola_sessie_id</p>
+      \                </td>                 <td width=\"255\">                     <p>trc.taboola.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Tot einde sessie</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>uid</p>
+      \                </td>                 <td width=\"255\">                     <p>.turn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <br
+      />                     <p>anj</p>                 </td>                 <td
+      width=\"255\">                     <p>.adnxs.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3</p>                     <p>&nbsp;</p>
+      \                </td>                 <td  width=\"128\">                     <p>90
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>icu</p>                 </td>                 <td
+      width=\"255\">                     <p>.adnxs.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1</p>                     <p>&nbsp;</p>
+      \                </td>                 <td  width=\"128\">                     <p>90
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>sess</p>                 </td>                 <td
+      width=\"255\">                     <p>.adnxs.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3</p>                 </td>                 <td
+      \ width=\"128\">                     <p>1 dag</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>uuid2</p>
+      \                </td>                 <td width=\"255\">                     <p>.adnxs.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>90 dagen</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>uuid2
+      (opt out)</p>                 </td>                 <td width=\"255\">                     <p>.adnxs.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>token</p>                 </td>
+      \                <td width=\"255\">                     <p>.adnxs.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>&nbsp;Bepaald door derde partijen</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>acb</p>                 </td>                 <td
+      width=\"255\">                     <p>.adnxs.com&nbsp;</p>                 </td>
+      \                <td width=\"198\">                     <p>2, 3</p>                     <p>&nbsp;</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_fp_td_user_id</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>2,
+      3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>&nbsp;Bepaald door derde partijen</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>t_pid</p>                 </td>                 <td
+      width=\"255\">                     <p>.taboola.com&nbsp;</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3,</p>                     <p>&nbsp;</p>
+      \                </td>                 <td  width=\"128\">                     <p>&nbsp;Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>DNT</p>                 </td>
+      \                <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>&nbsp;Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_svwv</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_wt</p>                 </td>
+      \                <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_ntwv</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_rii</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Bepaald door derde partijen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>taboola_svrii</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Bepaald door derde partijen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>taboola_ntrii</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Bepaald door derde partijen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>taboola_navwv</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Bepaald door derde partijen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>taboola_ucc</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Bepaald door derde partijen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>taboola_svfcd</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Bepaald door derde partijen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>taboola_svfcm</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      \  width=\"128\">                     <p>Bepaald door derde partijen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>taboola_select</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>Bepaald door derde partijen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>taboola_uppc</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_user_id</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>_fcap_CAM4</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td  width=\"128\">                     <p>7
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_ofcap_DOC1</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td  width=\"128\">                     <p>7
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_utastes_1</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                    <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>12 maanden</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>obuid</p>
+      \                </td>                 <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>3
+      maanden</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>recs-{}</p>                 </td>                 <td
+      width=\"255\">                     <p>.outbrain.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1</p>                 </td>
+      \                <td  width=\"128\">                     <p>1 minuut of tot
+      refresh van de pagina</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>obctr</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>zolang
+      de browser open is</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>obvctr</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>zolang
+      de browser open is</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>obCACampaign</p>
+      \                </td>                 <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>obCACP</p>
+      \                </td>                 <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCALP</p>                 </td>                 <td
+      width=\"255\">                     <p>.outbrain.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3</p>                     <p>&nbsp;</p>
+      \                </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCAMedium</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCAReferral</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>obCAsessie</p>
+      \                </td>                 <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>30
+      minuten</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCASource</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCATerm</p>                 </td>                 <td
+      width=\"255\">                     <p>.outbrain.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3</p>                     <p>&nbsp;</p>
+      \                </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCATrueMedium</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>JSESSIONID</p>
+      \                </td>                 <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>sessie</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>_bcs-{}</p>
+      \                </td>                 <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                     <p>&nbsp;</p>                 </td>                 <td
+      \ width=\"128\">                     <p>30 minuten</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>obroute2</p>
+      \                </td>                 <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obwwwroute</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>         </tbody>     </table>     <p>&nbsp;</p>
+      \    <p>Let op, bepaalde cookies zijn 'dynamische cookies'. Dit betekent dat
+      je verschillende namen van cookies kunt vinden die behoren tot dezelfde 'cookie
+      familie'. Een nummer in de naam van de cookie is bijvoorbeeld verschillend.
+      Deze cookies hebben dezelfde doeleinden en dezelfde bewaartermijn als de cookie
+      van dezelfde 'cookie familie' welke in de lijst hierboven is vermeld.</p>     <p>&nbsp;</p>
+      \    <p>Voor de cookies die onze derde partijen voor advertentiedoeleinden plaatsen,
+      verwijzen wij naar de verklaringen die deze partijen op hun eigen websites daarover
+      geven; zie de namen en links hieronder. Let op dat deze verklaringen regelmatig
+      kunnen wijzigen. Microsoft heeft daar geen invloed op.</p>     <ul>         <li>
+      \            <a target=_blank href=\"https://www.appnexus.com/en/company/platform-privacy-policy\">AppNexus
+      - Platform Privacy Policy</a>         </li>         <li>             <a target=_blank
+      href=\"http://www.taboola.com/cookie-policy\">Cookie Policy | World's Largest
+      Discovery Platform | Taboola</a>         </li>         <li>             <a target=_blank
+      href=\"http://www.outbrain.com/legal/privacy\">Privacy Policy | Outbrain</a>
+      \        </li>     </ul>     <p>&nbsp;</p>     <p>         <strong><em>Ad 5
+      - Cookies om gedragsafhankelijke inhoud te kunnen tonen</em></strong>     </p>
+      \    <p>Ons doel is om bezoekers van MSN.com/nl-nl te voorzien van informatie
+      die zo relevant mogelijk is voor hem of haar. Daarom proberen wij de inhoud
+      van MSN.com/nl-nl zoveel mogelijk aan iedere bezoeker aan te passen. Dit doen
+      we niet alleen via de inhoud van MSN.com/nl-nl, maar ook via de advertenties
+      die worden getoond.</p>     <p>Wij alsook derde partijen proberen daarom op
+      basis van de websites die u bezoekt op het internet een beeld te krijgen van
+      uw vermoedelijke interesses zonder een naar een persoon herleidbaar profiel
+      op te bouwen. Dit helpt ons op aanpassingen te maken. Op basis van deze interesses
+      passen wij alsook derde partijen dan de inhoud en de advertenties op MSN.com/nl-nl
+      aan voor verschillende groepen klanten. Zo kunt u bijvoorbeeld op basis van
+      uw surfgedrag opgenomen worden in een bepaalde categorie, zoals &rsquo;mannen
+      in de leeftijdscategorie 30 tot 45 jaar, getrouwd en kinderen met een interesse
+      in voetbal&rsquo;. Deze groep krijgt vervolgens uiteraard andere advertenties
+      te zien dan het segment &rsquo;vrouw, leeftijdscategorie 20 tot 30 jaar, ongetrouwd
+      en interesse in reizen&rsquo;.</p>     <p>&nbsp;</p>     <p>Ook derde partijen
+      die via onze website cookies plaatsen, kunnen op deze manier proberen uw interesses
+      te achterhalen. De informatie over uw huidige websitebezoek kan in dat geval
+      gecombineerd worden met informatie van eerdere bezoeken aan andere websites
+      dan de onze.</p>     <p>&nbsp;</p>     <p>Als dergelijke cookies niet worden
+      gebruikt dan betekent dit overigens niet dat u geen advertenties meer te zien
+      krijgt op onze website. De advertenties zijn in dat geval alleen niet langer
+      toegesneden op uw interesses.</p>     <p>&nbsp;</p>     <p>Deze cookies worden
+      gebruikt om:</p>     <ol>         <li>de websites die je bezoekt registreren
+      om hiermee een inschatting te maken van je interesses zodat we voor jou interessante
+      en relevante advertenties kunnen tonen</li>         <li>te achterhalen om de
+      advertenties interessant voor je zijn gaan we na of je op een advertentie hebt
+      geklikt</li>         <li>informatie over je surfgedrag door te gegeven aan andere
+      websites, daardoor de advertenties steeds interessanter voor je worden</li>
+      \        <li>er gebruik gemaakt wordt van diensten van derde partijen om advertenties
+      aan je te kunnen tonen</li>         <li>op basis van jouw social media gebruik
+      interessantere advertenties te tonen</li>     </ol>     <p>&nbsp;</p>     <p>Zie
+      hieronder een lijst met de cookies, voor welke doeleinden deze cookies worden
+      gebruikt en hoe lang ze worden gebruikt.</p>     <p>&nbsp;</p>     <table width=\"933\">
+      \        <thead>             <tr>                 <td width=\"353\">                     <p>
+      \                        <strong>Naam</strong>                     </p>                 </td>
+      \                <td  width=\"257\">                     <p>                         <strong>Geplaatst
+      door</strong>                     </p>                 </td>                 <td
+      width=\"198\">                     <p>                         <strong>Waarvoor</strong>
+      \                    </p>                 </td>                 <td width=\"125\">
+      \                    <p>                         <strong>Hoe lang</strong>                     </p>
+      \                </td>             </tr>         </thead>         <tbody>             <tr>
+      \                <td  width=\"362\">                     <p>ANON</p>                 </td>
+      \                <td width=\"255\">                     <p>.msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>3</p>                 </td>
+      \                <td  width=\"128\">                     <p>Tot einde sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>OAS_SC1</p>                 </td>                 <td
+      width=\"255\">                     <p>                         <a target=_blank
+      href=\"http://www.msn.com/\">www.msn.com</a>                     </p>                 </td>
+      \                <td width=\"198\">                     <p>4</p>                 </td>
+      \                <td  width=\"128\">                     <p>Tot einde sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>taboola global:user-id</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td  width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>trc_map</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3, 4, 5</p>                 </td>
+      \                <td  width=\"128\">                     <p>Nvt</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>Tbx:ovr</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>Tbx:ref</p>                 </td>                 <td
+      width=\"255\">                     <p>msn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3, 4, 5</p>                 </td>
+      \                <td  width=\"128\">                     <p>Nvt</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>Trc_cache</p>
+      \                </td>                 <td width=\"255\">                     <p>msn.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>*:sessie-data&nbsp; &nbsp;</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td  width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>OB-AD-BLOCKER-STAT</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td  width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>OB-USER-TOKEN</p>                 </td>
+      \                <td width=\"255\">                     <p>msn.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td  width=\"128\">                     <p>Nvt</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>t_gid</p>                 </td>                 <td
+      width=\"255\">                     <p>.taboola.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4</p>                 </td>
+      \                <td  width=\"128\">                     <p>1 jaar</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>t_vpub</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>taboola_usg</p>                 </td>
+      \                <td width=\"255\">                     <p>.taboola.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>taboola_sessie_id</p>                 </td>
+      \                <td width=\"255\">                     <p>trc.taboola.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2</p>                 </td>                 <td  width=\"128\">                     <p>Tot
+      einde sessie</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>taboola_upci</p>                 </td>
+      \                <td width=\"255\">                     <p>trc.taboola.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4</p>                 </td>                 <td  width=\"128\">                     <p>1
+      jaar</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>uid</p>                 </td>                 <td
+      width=\"255\">                     <p>.turn.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3, 4, 5</p>                 </td>
+      \                <td  width=\"128\">                     <p>180 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <br
+      />                     <p>anj</p>                 </td>                 <td
+      width=\"255\">                     <p>.adnxs.com</p>                 </td>                 <td
+      width=\"198\">                     <p>1, 2, 3, 4, 5</p>                 </td>
+      \                <td  width=\"128\">                     <p>90 dagen</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>uuid2</p>
+      \                </td>                 <td width=\"255\">                     <p>.adnxs.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>90
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>t_pid</p>                 </td>                 <td
+      width=\"255\">                     <p>.taboola.com&nbsp;</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td  width=\"128\">                     <p>&nbsp;Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_nr_td_user_id</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>&nbsp;Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_wv</p>                 </td>
+      \                <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1</p>
+      \                </td>                 <td  width=\"128\">                     <p>&nbsp;Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_ntwv</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>2</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_rii</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>2</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_svrii</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>2</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_ntrii</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>2</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_navwv</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>2</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_ucc</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>2</p>
+      \                </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_svfcd</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_svfcm</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_select</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_mk</p>                 </td>
+      \                <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_uppc</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3</p>                 </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>taboola_user_id</p>
+      \                </td>                 <td width=\"255\">                     <p>.taboola.com&nbsp;</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>Bepaald
+      door derde partijen</p>                 </td>             </tr>             <tr>
+      \                <td  width=\"362\">                     <p>_fcap_CAM4</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2</p>                 </td>                 <td  width=\"128\">                     <p>7
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_ofcap_DOC1</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2</p>                 </td>                 <td  width=\"128\">                     <p>7
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obuid</p>                 </td>                 <td
+      width=\"255\">                     <p>.outbrain.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3</p>                 </td>
+      \                <td  width=\"128\">                     <p>3 maanden</p>                 </td>
+      \            </tr>             <tr>                 <td  width=\"362\">                     <p>recs-{}</p>
+      \                </td>                 <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2</p>                 </td>                 <td  width=\"128\">                     <p>1
+      minuut of tot refresh van de pagina</p>                 </td>             </tr>
+      \            <tr>                 <td  width=\"362\">                     <p>obCAContent</p>
+      \                </td>                 <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCACP</p>                 </td>                 <td
+      width=\"255\">                     <p>.outbrain.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCALP</p>                 </td>                 <td
+      width=\"255\">                     <p>.outbrain.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCAMedium</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCAReferral</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCAsessie</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>30
+      minuten</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCASource</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCATerm</p>                 </td>                 <td
+      width=\"255\">                     <p>.outbrain.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>obCATrueMedium</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>180
+      dagen</p>                 </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>ob_marketing_disclaimer</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>&nbsp;1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>ob_marketing_locale</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>JSESSIONID</p>                 </td>
+      \                <td width=\"255\">                     <p>.outbrain.com</p>
+      \                </td>                 <td width=\"198\">                     <p>1,
+      2, 3, 4, 5</p>                 </td>                 <td  width=\"128\">                     <p>sessie</p>
+      \                </td>             </tr>             <tr>                 <td
+      \ width=\"362\">                     <p>_bcs-{}</p>                 </td>                 <td
+      width=\"255\">                     <p>.outbrain.com</p>                 </td>
+      \                <td width=\"198\">                     <p>1, 2, 3, 4, 5</p>
+      \                </td>                 <td  width=\"128\">                     <p>30
+      minuten</p>                 </td>             </tr>         </tbody>     </table>
+      \    <p>&nbsp;</p>     <p>Let op, bepaalde cookies zijn 'dynamische cookies'.
+      Dit betekent dat je verschillende namen van cookies kunt vinden die behoren
+      tot dezelfde 'cookie familie'. Een nummer in de naam van de cookie is bijvoorbeeld
+      verschillend. Deze cookies hebben dezelfde doeleinden en dezelfde bewaartermijn
+      als de cookie van dezelfde 'cookie familie' welke in de lijst hierboven is vermeld.</p>
+      \    <p>&nbsp;</p>     <p>         <strong><em>Ad 6 - </em></strong>         <strong>Overige
+      / onvoorziene cookies</strong>     </p>     <p>         Door de manier waarop
+      internet en websites werken, kan het zijn dat wij niet altijd zicht hebben op
+      de cookies die via onze website door derde partijen worden geplaatst. Dit is
+      met name het geval als MSN.com/nl-nl zogenaamde         <em>embedded</em>&nbsp;elementen
+      bevat; dit zijn teksten, documenten, plaatjes of filmpjes die bij een andere
+      partij opgeslagen zijn, maar die op, in of via MSN.com/nl-nl getoond worden.
+      \    </p>     <p>&nbsp;</p>     <p>Mocht u vragen hebben over deze website cookies
+      die u tegenkomt op MSN.com/nl-nl die we hierboven dus genoemd hebben, dan raden
+      we u aan om rechtstreeks contact op te nemen met de derde partij en de vragen
+      welke cookies ze plaatsten, wat de reden daarvoor is, wat de levensduur van
+      de cookie is en op welke manier ze je privacy gewaarborgd hebben.</p>     <p>&nbsp;</p>
+      \    <p>         <strong>Cookies beheren</strong>     </p>     <p>Als je helemaal
+      niet wilt dat websites op jouw computer cookies plaatsen, dan kun je je browserinstellingen
+      aanpassen zodat je een waarschuwing krijgt voordat er cookies worden geplaatst.
+      Ook kun je de instellingen dusdanig aanpassen dat je browser alle cookies of
+      alleen de cookies van derde partijen weigert. Ook kun je je cookies die al zijn
+      geplaatst verwijderen. Let erop dat je de instellingen apart voor elke browser
+      en computer die je gebruikt moet aanpassen.</p>     <p>Wees je ervan bewust
+      dat als je cookies blokkeert, wij niet meer kunnen garanderen dat MSN.com/nl-nl
+      helemaal goed werkt. Het kan zijn dat enkele functies van de site verloren gaan
+      of zelfs dat je bepaalde websites helemaal niet meer kunt zien. Daarnaast betekent
+      het weigeren van cookies ook niet dat je geen advertenties meer te zien krijgt.
+      De advertenties zijn dan alleen niet meer toegesneden op jouw interesses en
+      worden vaker herhaald.</p>     <p>Hoe je je instellingen kunt aanpassen, verschilt
+      per browser. Raadpleeg indien nodig de helpfunctie van jouw browser, of klik
+      op &eacute;&eacute;n van de onderstaande iconen om direct naar de handleiding
+      van je browser te gaan. Wil je cookies van specifieke partijen uitzetten, dan
+      kan dat via www.youronlinechoices.eu.</p>     <p>  <ul>         <li>             <a
+      target=_blank href=\"https://support.microsoft.com/nl-nl/help/17442/windows-internet-explorer-delete-manage-cookies\">Internet
+      Explorer</a>         </li>         <li>             <a target=_blank href=\"https://privacy.microsoft.com/nl-nl/windows-10-microsoft-edge-and-privacy\">Microsoft
+      Edge</a>         </li>         <li>             <a target=_blank href=\"https://support.google.com/chrome/answer/95647\">Google
+      Chrome</a>         </li> <li>             <a target=_blank href=\"https://support.mozilla.org/kb/enable-and-disable-cookies-website-preferences\">Mozilla
+      Firefox</a>         </li>   <li>             <a target=_blank href=\"http://www.opera.com/help/tutorials/security/privacy/\">Opera</a>
+      \        </li> </ul> </p>  <p>&nbsp;</p>     <p>         <strong>Slotopmerkingen</strong>
+      \    </p>     <p>Wij zullen deze verklaring af en toe aan moeten passen, omdat
+      bijvoorbeeld onze website of de regels rondom cookies wijzigen. We mogen de
+      inhoud van de verklaringen en de cookies die opgenomen staan in de lijsten altijd
+      en zonder waarschuwing vooraf wijzigen. Je kunt deze webpagina raadplegen voor
+      de laatste versie.</p>     <p>Mocht je nog vragen en/of opmerkingen hebben,
+      neem dan contact op met cookiefeedback@microsoft.com</p> <p><br>Versie: 16 augustus
+      2016</p>\r\n    </div>\r\n    <button class=\"accept\"  onclick=\"acceptAction()\">AKKOORD</button>\r\n\r\n
+      \               <img class=\"mslogo\" src=\"//img-s-msn-com.akamaized.net/tenant/amp/entityid/BBvrNFC.img\"
+      title=\"Microsoft-logo\" />\r\n    <a class=\"copyright microsoft\" href=\"https://www.microsoft.com/nl-nl\"><span></span><span></span>©
+      2017 Microsoft</a>\r\n\r\n        </div>\r\n\r\n    <script>\r\n        removeUnknownCookies();\r\n
+      \       function removeUnknownCookies()\r\n        {\r\n            var cookies
+      = '';\r\n            if (!cookies)\r\n            {\r\n                return;\r\n
+      \           }\r\n\r\n            var subDomains = getSubDomains();\r\n            var
+      cookieList = cookies.split(',');\r\n            cookieList.forEach(function
+      (cname) {\r\n                setCookie(cname, \"\", -1);\r\n                subDomains.forEach(function
+      (domain) {\r\n                    setCookie(cname, \"\", -1, domain);\r\n                });\r\n
+      \           });\r\n        }\r\n\r\n        function getSubDomains()\r\n        {\r\n
+      \           var subDomains = [];\r\n            var hostname = location.hostname;\r\n
+      \           subDomains.push(hostname);\r\n            subDomains.push('.' +
+      hostname);\r\n            var domainParts = hostname.split('.');\r\n            if
+      (domainParts.length > 2)\r\n            {\r\n                for (var i = domainParts.length
+      - 1; i > 1; i--)\r\n                {\r\n                    subDomains.push(domainParts.slice(-1
+      * i).join('.'));\r\n                }\r\n            }\r\n\r\n            return
+      subDomains;\r\n        }\r\n\r\n        function show(id)\r\n        {\r\n            var
+      element = document.getElementById(id);\r\n            if (element.style.display
+      != 'block')\r\n            {\r\n                element.style.display = 'block';\r\n
+      \           }\r\n        }\r\n\r\n        function hide(id)\r\n        {\r\n
+      \           var element = document.getElementById(id);\r\n            if (element.style.display
+      != 'none')\r\n            {\r\n                element.style.display = 'none';\r\n
+      \           }\r\n        }\r\n        function renderCookieWallStatement()\r\n
+      \       {\r\n            hide('cacpageoverlay');\r\n            hide('msnstaticpage');\r\n
+      \           hide('darkscreen');\r\n            document.body.style.background
+      = \"#fff\";\r\n            document.body.style.overflow = \"scroll\";\r\n            show('cacpagestatement');\r\n
+      \       }\r\n\r\n        function acceptAction()\r\n        {\r\n            var
+      cacCookieValue = 'nl-nl' + '|' + 'v1';\r\n            setCookie(\"cac\", cacCookieValue,
+      180, '', '/');\r\n            window.location.reload(true);\r\n        }\r\n\r\n
+      \       function setCookie(cname, cvalue, exdays, domain, path)\r\n        {\r\n
+      \           var expiryDate;\r\n            var builder = [cname, \"=\", cvalue];\r\n
+      \           if (-1 == exdays)\r\n            {\r\n                expiryDate
+      = \"Fri, 31 Dec 1999 23:59:59 GMT\";\r\n            }\r\n            else if
+      (exdays)\r\n            {\r\n                var date = new Date();\r\n                date.setTime(date.getTime()
+      + (exdays * 86400000));\r\n                expiryDate = date.toUTCString();\r\n
+      \           }\r\n\r\n            if (expiryDate) { builder.push(\";expires=\",
+      expiryDate); }\r\n            if (domain) { builder.push(\";domain=\", domain);
+      }\r\n            if (path) { builder.push(\";path=\", path); }\r\n\r\n            document.cookie
+      = builder.join(\"\");\r\n        }\r\n\r\n        function onLoad()\r\n        {\r\n
+      \           image = document.getElementById(\"msnstaticpage\");\r\n            imageWidth
+      = image.width;\r\n\r\n            onResize();\r\n        }\r\n\r\n        function
+      onResize()\r\n        {\r\n            var viewportWidth = Math.max(document.documentElement.clientWidth,
+      window.innerWidth || 0)\r\n            var difference = imageWidth - viewportWidth;\r\n\r\n
+      \           if (difference > 0)\r\n            {\r\n                var totalLeftMoved
+      = difference / 2;\r\n\r\n                if (totalLeftMoved > 155)\r\n                {\r\n
+      \                   totalLeftMoved = 155;\r\n                }\r\n\r\n                var
+      left = \"-\" + totalLeftMoved + \"px\";\r\n                image.style.left
+      = left;\r\n            }\r\n            else\r\n            {\r\n                image.style.left
+      = \"0px\";\r\n            }\r\n        }\r\n\r\n        function onBeforeUnload()\r\n
+      \       {\r\n            document.body.scrollTop = document.documentElement.scrollTop
+      = 0;\r\n        }\r\n\r\n        var image;\r\n        var imageWidth;\r\n        if
+      (window.addEventListener)\r\n        {\r\n            window.addEventListener(\"load\",
+      onLoad);\r\n            window.addEventListener(\"resize\", onResize);\r\n            window.addEventListener(\"beforeunload\",
+      onBeforeUnload);\r\n        }\r\n        else if (window.attachEvent)\r\n        {\r\n
+      \           window.attachEvent(\"onload\", onLoad);\r\n            window.attachEvent(\"onresize\",
+      onResize);\r\n            window.attachEvent(\"onbeforeunload\", onBeforeUnload)\r\n
+      \       }\r\n    </script>\r\n</body>\r\n</html>\r\n"
+    headers:
+      Access-Control-Allow-Methods:
+      - HEAD,GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, no-store, no-transform
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Thu, 30 Mar 2017 07:12:41 GMT
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Retry-Count:
+      - "0"
+      Server:
+      - Microsoft-IIS/10.0
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - User-Agent
+      Via:
+      - 1.1 aer01-mda2-dmz-wsa-4-mgmt.cisco.com:80 (Cisco-WSA/10.1.0-204)
+      X-Activity-Id:
+      - 2e50cac5-406f-4af0-bf0d-379fdaa4b1e9
+      X-Appversion:
+      - 2.0.6295.359
+      X-Aspnetmvc-Version:
+      - "5.2"
+      X-Az:
+      - '{did:be817c76e7924bfa88c6d1161944fb06, rid: 95, sn: eastus-prod-hp, dt: 2017-02-15T08:24:15.7119794Z,
+        bt: 2017-03-27T00:12:16.1541402Z}'
+      X-Msedge-Ref:
+      - 'Ref A: 2E50CAC5406F4AF0BF0D379FDAA4B1E9 Ref B: AM1EDGE0618 Ref C: Thu Mar
+        30 00:12:41 2017 PST'
+      X-Powered-By:
+      - ASP.NET
+      X-Xss-Protection:
+      - "1"
+    status: 200 OK
+    code: 200
+- request:
+    body: <aaaLogin inName="admin" inPassword="C1sco123"/>
+    form: {}
+    headers:
+      Content-Type:
+      - application/xml
+    url: https://10.52.208.71/nuova
+    method: POST
+  response:
+    body: ' <aaaLogin cookie="" response="yes" outCookie="1490857926/27ec7c84-cafb-4d5a-818a-b02aa6a205e2"
+      outRefreshPeriod="600" outPriv="admin,read-only" outDomains="org-root" outChannel="noencssl"
+      outEvtChannel="noencssl" outSessionId="" outVersion="3.1(2b)" outName=""> </aaaLogin>'
+    headers:
+      Content-Length:
+      - "274"
+      Content-Type:
+      - application/soap+xml
+      Date:
+      - Thu, 30 Mar 2017 07:12:06 GMT
+      Retry-Count:
+      - "0"
+      Server:
+      - Apache/2.4.16 (Unix) CiscoSSL/1.0.1l.4.8-fips
+    status: 200 OK
+    code: 200
