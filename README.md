@@ -1,6 +1,14 @@
 GoRequest
 =========
 
+## Adapted to
+- Provide additional information back to the developer;
+  - Request Counter
+  - Response Time
+- Integrated the great VCR project github.com/dnaeon/go-vcr/recorder;
+  - Added values and public functions to allow the setup and control of VCR
+  
+
 GoRequest -- Simplified HTTP client ( inspired by famous SuperAgent lib in Node.js )
 
 ![GopherGoRequest](https://raw.githubusercontent.com/parnurzeal/gorequest/gh-pages/images/Gopher_GoRequest_400x300.jpg)
